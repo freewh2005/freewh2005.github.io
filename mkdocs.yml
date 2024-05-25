@@ -1,0 +1,10 @@
+site_name: My Docs
+
+theme:
+  name: material
+
+nav:
+  - "home": home.md
+  - "wh2005's Old Blog for OI": 
+      - "lca": OI/lca.md
+      
