@@ -514,6 +514,39 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#electrostatic_fieldcircuit" class="md-nav__link">
+    <span class="md-ellipsis">
+      静电场(electrostatic field)环路(circuit)定律
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#electric_potential" class="md-nav__link">
+    <span class="md-ellipsis">
+      Electric Potential (电势)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Electric Potential (电势)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#electric_dipole" class="md-nav__link">
+    <span class="md-ellipsis">
+      Electric Dipole 电偶极子
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -668,6 +701,39 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#electrostatic_fieldcircuit" class="md-nav__link">
+    <span class="md-ellipsis">
+      静电场(electrostatic field)环路(circuit)定律
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#electric_potential" class="md-nav__link">
+    <span class="md-ellipsis">
+      Electric Potential (电势)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Electric Potential (电势)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#electric_dipole" class="md-nav__link">
+    <span class="md-ellipsis">
+      Electric Dipole 电偶极子
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -710,6 +776,24 @@ U=U_{12}+U_{13}+\cdots+U_{1n}+U_{23}+\cdots+U_{n-1,n}=\sum_{i\ne j}\frac{1}{2}U_
 </script>
 </p>
 <hr />
+<h2 id="electrostatic_fieldcircuit">静电场(electrostatic field)环路(circuit)定律<a class="headerlink" href="#electrostatic_fieldcircuit" title="Permanent link">&para;</a></h2>
+<p><span class="arithmatex">\(\oint E\cdot dl=0\)</span> 简单来说就这个式子，即 <span class="arithmatex">\(\nabla \times E=0\)</span> 其中 <span class="arithmatex">\(\nabla\)</span> 为旋度算符。</p>
+<p>静电场沿闭合环路的环量恒为 <span class="arithmatex">\(0\)</span> （相当于转一圈电场不做功，环路外的电荷产生的电场线进来多少出去多少，环路内的法线方向不做功，切线方向首尾相接，感性理解）</p>
+<p>有别于高斯定理，高斯定理是面积分（因此是 <span class="arithmatex">\(E\cdot ds\)</span> ，不能拿 <span class="arithmatex">\(E\cdot dr\)</span> 产生电势差来看）， <span class="arithmatex">\(\oiint E \cdot dA=\frac{q}{\epsilon_0}=\iiint\frac{\rho}{\epsilon_0}dv\)</span> ，<span class="arithmatex">\(\rho\)</span> 为体电荷密度，即 <span class="arithmatex">\(\nabla \cdot E=\frac\rho{\epsilon_0}\)</span> 。</p>
+<h2 id="electric_potential">Electric Potential (电势)<a class="headerlink" href="#electric_potential" title="Permanent link">&para;</a></h2>
+<p>符号 <span class="arithmatex">\(V\)</span> ，为 <span class="arithmatex">\(V=\frac U{q_0}=\frac q{4\pi\epsilon_0 r}\)</span> 。</p>
+<p>这就好办了，计算多个点在同一点所造成的电势差，那就是所有点单独在这里产生的贡献的累加（<span class="arithmatex">\(V_1+V_2+\cdots\)</span>）。这里还是无限远处零势能。这一定比你合电场然后积分算的快。</p>
+<p><span class="arithmatex">\(V_b-V_a=-\int_a^bE\cdot dl\)</span></p>
+<p>均匀场强下，就是 <span class="arithmatex">\(EL=E(b-a)\)</span></p>
+<p>如果无限远处零势能</p>
+<p><span class="arithmatex">\(V_p-V_\infty=V_p=-\int_\infty^p E\cdot dl=\int_p^\infty E\cdot dl\)</span></p>
+<p>再来看看这个式子
+<script type="math/tex; mode=display">
+V=\frac U{q_0}=\frac q{4\pi\epsilon_0 r}
+</script>
+对于单一个点电荷，以其圆心，同一圆上的电势相同。</p>
+<h3 id="electric_dipole">Electric Dipole 电偶极子<a class="headerlink" href="#electric_dipole" title="Permanent link">&para;</a></h3>
+<p><img alt="image-20241009203742994" src="https://static.memset0.cn/img/v6/2024/10/09/0XYM0oGV.png" /></p>
 
 
 
