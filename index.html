@@ -610,20 +610,21 @@ docs/
 <p>例如https://github.com/username/username.io</p>
 <p>2.在本地创建一个mkdocs项目，可以成功运行 mkdocs serve 查看站点</p>
 <p>3.初始化github 仓库</p>
-<p>cd path/to/your/mkdocs/project
-git init
-git add .
-git commit -m &ldquo;Initial commit&rdquo;
-git branch -M main</p>
+<p>cd path/to/your/mkdocs/project</p>
+<p>git init</p>
+<p>git add .</p>
+<p>git commit -m &ldquo;Initial commit&rdquo;</p>
+<p>git branch -M main</p>
 <p>这一步是初始化、加入全部数据、上传、创建分支</p>
-<p>git remote add origin https://github.com/username/username.io
-git push -u origin main</p>
+<p>git remote add origin https://github.com/username/username.io</p>
+<p>git push -u origin main</p>
 <p>这里是连接到远程仓库并将仓库命名为origin，之后就git push -u origin（仓库名） main(分支) 可以了。</p>
 <p>这是把东西给你放到仓库里去，想要进行部署（即将东西放置到博客内，还需要 <code>mkdocs gh-deploy</code>）</p>
 <p>mkdocs gh-deploy</p>
 <p>如果出现形如因为本地里的东西和仓库内的东西不一致导致无法部署的问题，可以尝试 <code>git pull</code></p>
 <p>之后你每次更新博客（本地内容）都只要mkdocs gh-deploy 就可以了。</p>
 <p>对于error：No module named &lsquo;mdx_math&rsquo;的解决方案是pip install python-markdown-math</p>
+<p>每次部署完不会迅速更新，要等待几分钟，有延时</p>
 
 
 
