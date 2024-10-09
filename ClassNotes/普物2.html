@@ -697,12 +697,19 @@
 <script type="math/tex; mode=display">
 U_b-U_a=-\int_a^b F\cdot dl=-\int_a^b \frac{1}{4\pi\epsilon_0}\frac{q_1q_2}{r^2}dr=\frac{q_1q_2}{4\pi\epsilon_0}(\frac{1}{r_b}-\frac1{r_a})
 </script>
-当我们选择 <span class="arithmatex">\(r_a=\infty,U_\infty=0,r=r_b\)</span> ，有 <span class="arithmatex">\(U_r=\frac{q_1q_2}{4\pi\epsilon_0 r}\)</span> 。</p>
+当我们选择 <span class="arithmatex">\(r_a=\infty,U_\infty=0,r=r_b\)</span> ，有 <span class="arithmatex">\(U(r)=\frac{q_1q_2}{4\pi\epsilon_0 r}\)</span> 。</p>
 <p>若正，则为 <code>attractive force</code> ，若负则为 <code>repulsive force</code> 。</p>
 <hr />
 <h3 id="_1">一个系统的点电荷的电势能<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
 <p><img alt="image-20241009194511459" src="https://static.memset0.cn/img/v6/2024/10/09/IpmQfKGL.png" /></p>
-<p>阿帆是的吧水电费啊的撒的</p>
+<p>如果以无穷远为 <span class="arithmatex">\(0\)</span> 势能点（我们上面那个公式是这么推的），你势能是个标量，所以你是可以通过叠加求出这个点的电势能（如，计算 <span class="arithmatex">\(A,B\)</span> 两个点电荷在 <span class="arithmatex">\(C\)</span> 处产生的电势能，原本是要用无穷远处的零势能加上从此到 <span class="arithmatex">\(C\)</span> 一路上电场关于距离的积分，相当于 <span class="arithmatex">\(\int (E_A(r)+E_B(r))dr\)</span> 但是这玩意显然是可以拆开来的，<span class="arithmatex">\(B\)</span> 对 <span class="arithmatex">\(C\)</span> 的贡献在直线 BC 上算，<span class="arithmatex">\(A\)</span> 对 <span class="arithmatex">\(C\)</span> 在 AC 上算， <span class="arithmatex">\(\int E_A(r)dr+\int E_B(r)dr\)</span> ，一个积分号拆成两个。你发现如果统一用到 <span class="arithmatex">\(C\)</span> 距离和 <span class="arithmatex">\(A,B\)</span> 在距 <span class="arithmatex">\(C\)</span> 某处的合场强只有 <span class="arithmatex">\(A,B,C\)</span> 三点共线好算）。</p>
+<p>所以
+<script type="math/tex; mode=display">
+U=U_{12}+U_{13}+\cdots+U_{1n}+U_{23}+\cdots+U_{n-1,n}=\sum_{i\ne j}\frac{1}{2}U_{ij}\\
+=\sum_{i\ne j}\frac12\frac{q_iq_j}{4\pi\epsilon_0r_{ij}}
+</script>
+</p>
+<hr />
 
 
 
