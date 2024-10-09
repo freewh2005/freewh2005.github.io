@@ -382,6 +382,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#instructions_for_creating_a_new_blog" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instructions for creating a new blog
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -554,6 +563,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#instructions_for_creating_a_new_blog" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instructions for creating a new blog
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -587,6 +605,25 @@ docs/
     index.md  # The documentation homepage.
     ...       # Other markdown pages, images and other files.
 </code></pre></div></td></tr></table></div>
+<h2 id="instructions_for_creating_a_new_blog">Instructions for creating a new blog<a class="headerlink" href="#instructions_for_creating_a_new_blog" title="Permanent link">&para;</a></h2>
+<p>1.先要在github上创建一个仓库，例如 https://github.com/username/你自己喜欢的一个后缀名</p>
+<p>例如https://github.com/username/username.io</p>
+<p>2.在本地创建一个mkdocs项目，可以成功运行 mkdocs serve 查看站点</p>
+<p>3.初始化github 仓库</p>
+<p>cd path/to/your/mkdocs/project
+git init
+git add .
+git commit -m &ldquo;Initial commit&rdquo;
+git branch -M main</p>
+<p>这一步是初始化、加入全部数据、上传、创建分支</p>
+<p>git remote add origin https://github.com/username/username.io
+git push -u origin main</p>
+<p>这里是连接到远程仓库并将仓库命名为origin，之后就git push -u origin（仓库名） main(分支) 可以了。</p>
+<p>这是把东西给你放到仓库里去，想要进行部署（即将东西放置到博客内，还需要 <code>mkdocs gh-deploy</code>）</p>
+<p>mkdocs gh-deploy</p>
+<p>如果出现形如因为本地里的东西和仓库内的东西不一致导致无法部署的问题，可以尝试 <code>git pull</code></p>
+<p>之后你每次更新博客（本地内容）都只要mkdocs gh-deploy 就可以了。</p>
+<p>对于error：No module named &lsquo;mdx_math&rsquo;的解决方案是pip install python-markdown-math</p>
 
 
 
