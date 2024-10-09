@@ -1,0 +1,152 @@
+site_name: wh2005's Notebooks
+site_description: 
+site_author: wh2005
+copyright: Copyright &copy; 2024 - 2099 wh2005
+site_url: https://freewh2005.github.io/
+repo_url: https://github.com/freewh2005/freewh2005.github.io
+repo_name: wh2005/Notebooks
+edit_uri: ""
+use_directory_urls: false
+
+
+#hljs_languages:
+#  - yaml
+
+
+# 主题配置
+theme: 
+    name: material
+    language: zh
+    search_index_only: true
+    palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      toggle:
+        icon: material//weather-sunny
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      primary: teal
+      scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+    logo: assets/logo.png
+    favicon: assets/logo.png
+    features:
+    #- navigation.instant # 点击内部链接时，不用全部刷新页面
+    #- navigation.instant.prefetch
+    #- navigation.instant.progress
+    - navigation.tracking # 在url中使用标题定位锚点
+    - navigation.tabs # 顶部显示导航顶层nav（也就是第一个节点）
+    #- navigation.tabs.sticky # 滚动是隐藏顶部nav，需要配合navigation.tabs使用
+    #- navigation.sections # nav节点缩进
+    #- navigation.expand # 不折叠左侧nav节点
+    #- navigation.indexes # 指定节点index pages ，跟instant不兼容
+    #- navigation.path
+    - navigation.indexes
+    - toc.follow
+    #- toc.integrate # 右侧生产目录
+    - navigation.top # 一键回顶部
+    - header.autohide
+    - search.share # 搜索分享
+    - search.suggest # 搜索建议
+    - search.highlight #搜索高亮
+    - header.autohide  #标题自动隐藏
+    - content.code.copy
+    - content.tabs.link
+
+markdown_extensions:  #Markdown扩展列表
+    - abbr
+    - smarty  #启用 SmartyPants 排版扩展
+    - admonition  #通过不同颜色现实告警、备注信息
+    - pymdownx.details  #细节折叠
+    - pymdownx.superfences  #超级围栏
+    - attr_list   #属性列表（按钮-颜色图标）
+    - def_list   #定义列表
+    - footnotes  #行内脚注
+    - meta   #元数据
+    - mdx_math
+    - md_in_html  #HTML 中的 Markdown
+    - toc:  
+        permalink: True #在 toc 扩展中启用永久链接
+        separator: "_"  #分割线符号
+    - pymdownx.highlight:
+        linenums: true
+        anchor_linenums:  true
+        pygments_lang_class: true
+    - pymdownx.arithmatex:  #数学公式
+        generic: true  
+    - pymdownx.betterem
+    - pymdownx.caret  #插入角标符号(`^`)
+    - pymdownx.mark  #双等号(`==`)
+    - pymdownx.tilde  #波浪号(`~`)
+    #- pymdownx.critic:  #评论家(突出显示建议更改)，未推荐
+    - pymdownx.inlinehilite
+    - pymdownx.superfences #此配置可启用内容标签，并允许在内容标签中嵌套任意内容
+    - pymdownx.keys   #键盘键和组合  
+    - pymdownx.snippets
+    - pymdownx.emoji:  #表情符号
+        emoji_index: !!python/name:material.extensions.emoji.twemoji
+        emoji_generator: !!python/name:materialx.emoji.to_svg
+    - pymdownx.highlight  #代码高亮，对代码块（SuperFences）和行内代码块（InlineHilite）的语法突出显示
+    - pymdownx.inlinehilite  #行内高亮
+    - pymdownx.smartsymbols  #智能符号
+    - pymdownx.tabbed:  #内容选项卡
+        alternate_style: true  #启用内容选项卡替代样式，必须开启
+    - pymdownx.tasklist:  #任务列表
+        custom_checkbox: true   #切换复选框的呈现样式，将原生复选框样式替换为漂亮的图标
+#      clickable_checkbox: true  #切换复选框是否可点击，默认false，不建议开
+
+plugins:
+    - search  #默认提供搜索，使用lunr.js作为搜索引擎
+        #min_search_length: 2  #查询的最小长度，整数，默认3
+        #separator: '[\s\-\.]+'  #单词分隔符，默认使用空格和连字符，这里添加了点
+        #lang: ja  #搜索索引的语言，中文可使用日语
+        #indexing: 'full'  #构建索引策略，默认full索引每页的标题、章节标题和全文，sections 索引每页的标题和章节标题，titles仅索引每页的标题
+  #- git-revision-date-localized:
+  #    enable_creation_date: true
+  #- git-committers:
+  #   repository: squidfunk/mkdocs-material
+  #   branch: main
+
+nav:
+  - '主页': index.md
+  - '课程笔记': 
+      - '数据结构': 
+        - '前几章': ClassNotes/数据结构.md
+        - '测试': ClassNotes/HW summary.md
+      - '大物实验':
+        - '绪论': ClassNotes/大学物理实验绪论.md
+      - '宏观经济学':
+        - '导论': ClassNotes/macroeconomics/导论.md
+        - 'IS-LM': ClassNotes/macroeconomics/从零开始的宏经笔记.md
+        - '随笔': ClassNotes/macroeconomics/宏经的一些小感悟.md
+  - '硬件': 
+      - '⚙️计算机系统概论': 
+        - '汇总': ClassNotes/ICS/ICS.md
+      - '数字逻辑设计': ClassNotes/verilog.md 
+      - '计算机组成':
+        - '第一章': ClassNotes/计算机组成/chap1.md 
+        - '第三章': ClassNotes/计算机组成/chap3.md
+  - '数据':
+      - '数据库系统':
+        - '第一章-导入': ClassNotes/DB/DataBase.md
+  - '小玩意':
+      - 'Mkdocs搭建':
+        - '文章美化': 小玩意/文章美化.md
+
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+
+
+extra_css:
+  - css/extra.css
+  - https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css
+  # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.1.0/style.css
+  # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-tc-webfont@1.0.0/style.css
+  # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css
