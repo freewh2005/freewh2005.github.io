@@ -2,17 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://freewh2005.github.io/index.html</loc>
-         <lastmod>2024-10-10</lastmod>
+         <lastmod>2024-10-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://freewh2005.github.io/ClassNotes/%E6%99%AE%E7%89%A92.html</loc>
-         <lastmod>2024-10-10</lastmod>
+         <lastmod>2024-10-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://freewh2005.github.io/ClassNotes/%E6%99%AE%E7%89%A9%E5%AE%9E%E9%AA%8C2.html</loc>
-         <lastmod>2024-10-10</lastmod>
+         <lastmod>2024-10-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://freewh2005.github.io/ClassNotes/%E8%AE%A1%E7%BB%84%E7%AC%AC%E4%BA%8C%E7%AB%A0.html</loc>
+         <lastmod>2024-10-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
