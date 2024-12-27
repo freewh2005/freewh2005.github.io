@@ -1,0 +1,1783 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="wh2005">
+      
+      
+        <link rel="canonical" href="https://freewh2005.github.io/ClassNotes/%E6%99%AE%E7%89%A932-33.html">
+      
+      
+        <link rel="prev" href="%E6%99%AE%E7%89%A931.html">
+      
+      
+        <link rel="next" href="%E6%99%AE%E7%89%A934.html">
+      
+      
+      <link rel="icon" href="../assets/logo.jpg">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.24">
+    
+    
+      
+        <title>Chapter 32(33) 恒稳磁场 - wh2005's Notebooks</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6543a935.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/extra.css">
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#chapter_3233_the_steady_magnetic_field" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../index.html" title="wh2005&#39;s Notebooks" class="md-header__button md-logo" aria-label="wh2005's Notebooks" data-md-component="logo">
+      
+  <img src="../assets/logo.jpg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            wh2005's Notebooks
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Chapter 32(33) 恒稳磁场
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="分享" aria-label="分享" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/freewh2005/freewh2005.github.io" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    wh2005/Notebooks
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../index.html" class="md-tabs__link">
+        
+  
+    
+  
+  主页
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="%E6%99%AE%E7%89%A92.html" class="md-tabs__link">
+          
+  
+    
+  
+  课程笔记
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../index.html" title="wh2005&#39;s Notebooks" class="md-nav__button md-logo" aria-label="wh2005's Notebooks" data-md-component="logo">
+      
+  <img src="../assets/logo.jpg" alt="logo">
+
+    </a>
+    wh2005's Notebooks
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/freewh2005/freewh2005.github.io" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    wh2005/Notebooks
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    主页
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    课程笔记
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            课程笔记
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    普物2(H)
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            普物2(H)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="%E6%99%AE%E7%89%A92.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 28 电势能和电势
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="%E6%99%AE%E7%89%A929-30.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 29(30) 电容器和电介质
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="%E6%99%AE%E7%89%A931.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 31 恒定电流
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Chapter 32(33) 恒稳磁场
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="%E6%99%AE%E7%89%A932-33.html" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 32(33) 恒稳磁场
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      基本磁现象
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      恒定磁场的高斯定理
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amperes_law" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ampere&rsquo;s Law 安培定律
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b" class="md-nav__link">
+    <span class="md-ellipsis">
+      磁感应强度 \(B\)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      毕奥萨伐尔定律
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="毕奥萨伐尔定律">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      一段长直线电流产生的磁场
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      一段圆环产生的磁场
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      氢原子的波尔模型
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solenoid" class="md-nav__link">
+    <span class="md-ellipsis">
+      螺旋管的磁场（solenoid）
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="螺旋管的磁场（solenoid）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      单层螺线管
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      多层螺线管
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      磁场中的高斯定理和安培环路定理
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="磁场中的高斯定理和安培环路定理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      在长导线内的磁场
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      无限大平面内一排导线的磁场
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      无限长通电螺线管内部磁场
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#n" class="md-nav__link">
+    <span class="md-ellipsis">
+      N圈螺线环
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      带电导线受到的安培力
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="带电导线受到的安培力">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      两平行导线
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      闭合回路电流再磁场中产生力矩
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="闭合回路电流再磁场中产生力矩">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      对任意形状都成立的证明
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      磁偶极矩
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="磁偶极矩">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      磁偶极矩的势能
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      电荷在磁场中的运动
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="电荷在磁场中的运动">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vperp_b" class="md-nav__link">
+    <span class="md-ellipsis">
+      \(v\perp B\) 做圆周运动
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#case" class="md-nav__link">
+    <span class="md-ellipsis">
+      不垂直的case
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      质谱仪和速度选择器
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      回旋加速器
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      相对论效应
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      霍尔效应
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      注意
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="%E6%99%AE%E7%89%A934.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 34 法拉第电磁感应定律
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    普物实验2(H)
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            普物实验2(H)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="%E6%99%AE%E7%89%A9%E5%AE%9E%E9%AA%8C2.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7周小课题之微小位移
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    计组
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            计组
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="%E8%AE%A1%E7%BB%84%E7%AC%AC%E4%BA%8C%E7%AB%A0.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第二章
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    概率论
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            概率论
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="%E6%A6%82%E7%8E%87%E8%AE%BA%E7%AC%AC%E4%BA%8C%E7%AB%A0.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第二章
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="%E6%A6%82%E7%8E%87%E8%AE%BA%E7%AC%AC%E5%9B%9B%E7%AB%A0.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第四章
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      基本磁现象
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      恒定磁场的高斯定理
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amperes_law" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ampere&rsquo;s Law 安培定律
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b" class="md-nav__link">
+    <span class="md-ellipsis">
+      磁感应强度 \(B\)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      毕奥萨伐尔定律
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="毕奥萨伐尔定律">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      一段长直线电流产生的磁场
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      一段圆环产生的磁场
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      氢原子的波尔模型
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solenoid" class="md-nav__link">
+    <span class="md-ellipsis">
+      螺旋管的磁场（solenoid）
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="螺旋管的磁场（solenoid）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      单层螺线管
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      多层螺线管
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      磁场中的高斯定理和安培环路定理
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="磁场中的高斯定理和安培环路定理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      在长导线内的磁场
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      无限大平面内一排导线的磁场
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      无限长通电螺线管内部磁场
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#n" class="md-nav__link">
+    <span class="md-ellipsis">
+      N圈螺线环
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      带电导线受到的安培力
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="带电导线受到的安培力">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      两平行导线
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      闭合回路电流再磁场中产生力矩
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="闭合回路电流再磁场中产生力矩">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      对任意形状都成立的证明
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      磁偶极矩
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="磁偶极矩">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      磁偶极矩的势能
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      电荷在磁场中的运动
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="电荷在磁场中的运动">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vperp_b" class="md-nav__link">
+    <span class="md-ellipsis">
+      \(v\perp B\) 做圆周运动
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#case" class="md-nav__link">
+    <span class="md-ellipsis">
+      不垂直的case
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      质谱仪和速度选择器
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      回旋加速器
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      相对论效应
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      霍尔效应
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      注意
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="chapter_3233_the_steady_magnetic_field">Chapter 32(33) The Steady Magnetic Field 稳恒磁场<a class="headerlink" href="#chapter_3233_the_steady_magnetic_field" title="Permanent link">&para;</a></h1>
+<h2 id="_1">基本磁现象<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p><span class="arithmatex">\(N,S\)</span> 两个磁极，同号相斥，异号相吸。且自然界中不存在独立的 <span class="arithmatex">\(N\)</span> 极和 <span class="arithmatex">\(S\)</span> 极，和正电荷可以独立存在不同。对于一个磁铁，无论分多少小都有两极。</p>
+<p>近代理论认为可以有单独磁极存在，称为磁单极子，至今未发现。</p>
+<p>运动电荷可以通过磁场相互影响。</p>
+<h2 id="_2">恒定磁场的高斯定理<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<div class="arithmatex">\[
+\oiint B\cdot dA=0
+\]</div>
+<p>因为磁感应线是闭合曲线，因此穿入闭合曲面的磁感应线数必然等于穿出闭合曲面的磁感应线数，所以通过任意闭合曲面的总磁通量为 <span class="arithmatex">\(0\)</span> 。</p>
+<p>与高斯定理
+<script type="math/tex; mode=display">
+\oiint E\cdot dA=\frac{\sum q}{\epsilon_0}
+</script>
+但这两者在形式上是不对称的，因为激发静电场的场源（电荷）是电场线的源头或尾，所以静电场是发散的长，可称作有源场；而磁场磁感应线无头无尾，恒闭合，所以磁场是无源场，所以可以看出这两种本质是不同的场。</p>
+<h2 id="amperes_law">Ampere&rsquo;s Law 安培定律<a class="headerlink" href="#amperes_law" title="Permanent link">&para;</a></h2>
+<p>类比两个点电荷之间力的作用，我们同样有两个电流元之间的磁力作用关系。</p>
+<p><img alt="image-20241025231920945" src="C:\Users\lenovo\AppData\Roaming\Typora\typora-user-images\image-20241025231920945.png" /></p>
+<p>其中 <span class="arithmatex">\(ids\)</span> 表示一个电流源。这里的 <span class="arithmatex">\(ds\)</span> 表示的是电流元长度。</p>
+<p>如果 <span class="arithmatex">\(i_1ds_1\)</span> 和 <span class="arithmatex">\(i_2ds_2\)</span> 在同一平面，那么对于电流元 <span class="arithmatex">\(1\)</span> 对电流元 <span class="arithmatex">\(2\)</span> 的作用力就是该平面上与 <span class="arithmatex">\(i_2ds_2\)</span> 垂直的方向。电流元 <span class="arithmatex">\(2\)</span> 对电流元 <span class="arithmatex">\(1\)</span> 的作用力也是如此。</p>
+<p>这并不满足牛顿第三定律。</p>
+<p>因为电流元之间的作用力是通过磁场来实现的，就是 <span class="arithmatex">\(i_1ds_1\)</span> 在电流元处产生个垂直直面的磁场，然后磁场对电流元 <span class="arithmatex">\(2\)</span> 作用产生作用力。而这个方向和电流元方向和磁场的方向相关。</p>
+<p>具体可以看如下式子
+<script type="math/tex; mode=display">
+dF=Idl\times B\\
+F=i\int Bdx
+</script>
+方向用右手螺旋定则确定。注意，电磁都是右手定制，产生力的方向是左手定则。</p>
+<p>注意 <span class="arithmatex">\(\mu_0\)</span> 是个常数，和 <span class="arithmatex">\(k\)</span> 有关，在 <span class="arithmatex">\(F=kqq/r^2\)</span> 中我们有常数 <span class="arithmatex">\(k\)</span> ，这里为了计算方便，我们定义了 <span class="arithmatex">\(\mu_0\)</span> 含义，与 <span class="arithmatex">\(k\)</span> 有关，提出来个系数 <span class="arithmatex">\(\frac 1{4\pi}\)</span> 可以凑出面积。</p>
+<p><img alt="image-20241026173424362" src="C:\Users\lenovo\AppData\Roaming\Typora\typora-user-images\image-20241026173424362.png" />
+<script type="math/tex; mode=display">
+k=\frac{\mu_0}{4\pi}=10^{-7}N/A^2
+</script>
+</p>
+<ul>
+<li>举例 <span class="arithmatex">\(dF_{12}\ne dF_{21}\)</span> </li>
+</ul>
+<p><img alt="image-20241026173907931" src="C:\Users\lenovo\AppData\Roaming\Typora\typora-user-images\image-20241026173907931.png" /></p>
+<p>里面的框框是平行。ppt上改不过来。</p>
+<h2 id="b">磁感应强度 <span class="arithmatex">\(B\)</span><a class="headerlink" href="#b" title="Permanent link">&para;</a></h2>
+<p>根据安培定律，我们有</p>
+<p><span class="arithmatex">\(dF_{12}=\frac{\mu_0}{4\pi}\frac{i_2ds_2\times(ids_1\times e_{12})}{r_{12}^2}\)</span></p>
+<p>注意：<span class="arithmatex">\(r\)</span> 上面带着一个上三角标的是表示单位方向向量，大小只能为 <span class="arithmatex">\(1\)</span> ，这里我用 <span class="arithmatex">\(e\)</span> 表示避免造成误解。</p>
+<p>可以进行类比，</p>
+<p><img alt="image-20241026174322868" src="C:\Users\lenovo\AppData\Roaming\Typora\typora-user-images\image-20241026174322868.png" /></p>
+<p>把 <span class="arithmatex">\(dF_{12}\)</span> 关于 <span class="arithmatex">\(i_2d_2\)</span> 的部分拿出来，并对<span class="arithmatex">\(i_1d_1\)</span> 所在的电流进行环路积分，可以发现求出 <span class="arithmatex">\(1\)</span> 对应的电流环路整体对 <span class="arithmatex">\(2\)</span> 这个电流元产生的磁场大小，有</p>
+<p><img src="C:\Users\lenovo\AppData\Roaming\Typora\typora-user-images\image-20241026174659497.png" alt="image-20241026174659497" style="zoom:50%;" /></p>
+<p>所以可以知道 <span class="arithmatex">\(dF_2=i_2ds_2B_1\sin\theta\)</span> 当 <span class="arithmatex">\(\theta\)</span> 为 <span class="arithmatex">\(\frac{\pi}{2}\)</span> 时， <span class="arithmatex">\(dF_2\)</span> 最大此时式子为 <span class="arithmatex">\((dF_2)_{\max}=i_2ds_2B_1\)</span> ，<span class="arithmatex">\(B_1\)</span> 就是 <span class="arithmatex">\(\frac{(dF_2)_{max}}{i_2ds_2}\)</span> 。</p>
+<p>符号 <span class="arithmatex">\(T\)</span> 特斯拉，单位 <span class="arithmatex">\(N/(m\cdot A)\)</span> , <span class="arithmatex">\(1T=10^4Gauss\)</span> 高斯</p>
+<h2 id="_3">毕奥萨伐尔定律<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>即，其中 <span class="arithmatex">\(e\)</span> 是 <span class="arithmatex">\(r\)</span> 的单位方向向量
+<script type="math/tex; mode=display">
+dB=\frac{\mu_0}{4\pi}\frac{ids\times e}{r^2}
+</script>
+不知道表示矢量的上三角标怎么打，分子上的那个 <span class="arithmatex">\(e\)</span> 是个矢量。</p>
+<p>还是右手定则。</p>
+<p>还有我们要注意的是电流实际是怎么流的，导体是圆柱还是正方形的柱子还是啥在近似计算的时候都不重要，只要电流是直着流的，你就套长直线电流产生磁场的公式因为我们各种模型实际上是假设电流是怎么流的推导出来的。你圆柱体的长直线电流可以近似计算为在圆柱中央的直电流。</p>
+<h3 id="_4">一段长直线电流产生的磁场<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p><img alt="image-20241026180108612" src="C:\Users\lenovo\AppData\Roaming\Typora\typora-user-images\image-20241026180108612.png" /></p>
+<p><img alt="image-20241026180223312" src="C:\Users\lenovo\AppData\Roaming\Typora\typora-user-images\image-20241026180223312.png" /></p>
+<p>当 <span class="arithmatex">\(r_0&lt;&lt;L\)</span> 时，就可以用不含 <span class="arithmatex">\(\theta\)</span> 的式子替代，那么<span class="arithmatex">\(B\)</span> 与 <span class="arithmatex">\(r\)</span> 成反比。</p>
+<h3 id="_5">一段圆环产生的磁场<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p><img alt="image-20241026180357754" src="C:\Users\lenovo\AppData\Roaming\Typora\typora-user-images\image-20241026180357754.png" /></p>
+<p>所以有当 <span class="arithmatex">\(r_0=0\)</span> 时， <span class="arithmatex">\(B=\frac{\mu_0 i}{2R}\)</span> ，当 <span class="arithmatex">\(r_0&gt;&gt;R\)</span> 时， <span class="arithmatex">\(B=\frac{\mu_0iR^2}{2r_0^3}\)</span> 。</p>
+<ul>
+<li>计算 <span class="arithmatex">\(N\)</span> 圈带电圆环的磁偶极矩 <span class="arithmatex">\(\mu\)</span> （magnetic dipole moment）</li>
+</ul>
+<p><img alt="image-20241026180849081" src="C:\Users\lenovo\AppData\Roaming\Typora\typora-user-images\image-20241026180849081.png" /></p>
+<p><span class="arithmatex">\(B=\frac{\mu_0iR^2}{2r_0^3}=\frac{\mu_0i\pi R^2}{2\pi r_0^3}=\frac{\mu_0iA}{2\pi r_0^3}\)</span></p>
+<p>定义磁偶极矩 <span class="arithmatex">\(\mu=iA=i\pi R^2\)</span></p>
+<p>则 <span class="arithmatex">\(B=\frac{\mu_0\mu}{2\pi r_0^3}\)</span> </p>
+<p>当有 <span class="arithmatex">\(N\)</span> 层时， <span class="arithmatex">\(\mu=Ni\pi R^2\)</span> 。 <span class="arithmatex">\(\mu\)</span> 的方向是 <span class="arithmatex">\(A\)</span> 的法线方向。</p>
+<h3 id="_6">氢原子的波尔模型<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<p><img alt="image-20241026213507712" src="C:\Users\lenovo\AppData\Roaming\Typora\typora-user-images\image-20241026213507712.png" /></p>
+<p>就是在外面运动的电子形成电流，然后对中心的正电荷产生磁场。</p>
+<p>电流的大小就是 <span class="arithmatex">\(\frac{q}{T}=qf\)</span> ，因为这里的 <span class="arithmatex">\(T\)</span> 就是电子转一周需要的时间，然后电流的定义是 <span class="arithmatex">\(\Delta Q/\Delta T\)</span> 。转一周移动了 <span class="arithmatex">\(q\)</span> 个电荷，需要时间 <span class="arithmatex">\(T\)</span> 。</p>
+<h2 id="solenoid">螺旋管的磁场（solenoid）<a class="headerlink" href="#solenoid" title="Permanent link">&para;</a></h2>
+<h3 id="_7">单层螺线管<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<p><img alt="image-20241026214138852" src="C:\Users\lenovo\AppData\Roaming\Typora\typora-user-images\image-20241026214138852.png" /></p>
+<p>上图是考虑整个螺线管对其内部中轴上一点产生的磁场大小。做法是 <span class="arithmatex">\(dl\)</span> 长度内的所有圆环对该点产生的磁场进行积分。而我们在上一节中刚好求过圆环对中轴某一点磁场强度的计算。</p>
+<p>下面是最终结果。</p>
+<p><img alt="image-20241026214416192" src="C:\Users\lenovo\AppData\Roaming\Typora\typora-user-images\image-20241026214416192.png" /></p>
+<h3 id="_8">多层螺线管<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<p>就是那上面那个积分一下就可以了，及时从 <span class="arithmatex">\(R=R_l\)</span> 一直积到 <span class="arithmatex">\(R=R_r\)</span> 。</p>
+<p><img alt="image-20241026214555567" src="C:\Users\lenovo\AppData\Roaming\Typora\typora-user-images\image-20241026214555567.png" /></p>
+<h2 id="_9">磁场中的高斯定理和安培环路定理<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
+<p>类比电场中的高斯定理和环路定理
+<script type="math/tex; mode=display">
+\oiint E\cdot dA=\frac{\sum q}{\epsilon_0}\\
+\oint E\cdot dl=0
+</script>
+对磁场有
+<script type="math/tex; mode=display">
+\oiint B\cdot dA=0\\
+\oint B\cdot dl=\mu_0\sum_{in\,\text{loop}} i
+</script>
+高斯定理就是对于闭合曲面，磁通量总和为 <span class="arithmatex">\(0\)</span> 。</p>
+<p>这里定义下磁通量
+<script type="math/tex; mode=display">
+\Phi_B=\iint B\cdot dA=\iint B \cos \theta dA
+</script>
+还是那句话，哪个是矢量啥的自己看，以后有时间在修改。</p>
+<p>单位为 <span class="arithmatex">\(Wb\)</span> ，即 <span class="arithmatex">\(T\cdot m^2\)</span>
+<script type="math/tex; mode=display">
+B=\lim_{A\rightarrow 0}\frac{\Delta\Phi_B}{A}
+</script>
+磁场安培环路定律</p>
+<p><img alt="image-20241028111415704" src="C:\Users\lenovo\AppData\Roaming\Typora\typora-user-images\image-20241028111415704.png" /></p>
+<p>这里正负还是好定义的，有右手螺旋就可以了。</p>
+<p>理解上，你看一个长直导线对半径为 <span class="arithmatex">\(r\)</span> 的圆处处产生磁场为 <span class="arithmatex">\(\frac{\mu_0i}{2\pi r_0}\)</span> ，若是乘上个一周，就是 <span class="arithmatex">\(\mu_0i\)</span> 。因为环路定理计算所以相对于环，那导线都可以算是无限长。</p>
+<p>这里只要管电流进出就可以了，不用管电流是斜着流进来还是垂直流入。只要看你框住多少电流就可以了。要注意的是你斜着流进来很多电流，你斜着拿环路框可能是框不住所有电流，真正框住了多少电流要拿电流密度乘上投影面积。</p>
+<h3 id="_10">在长导线内的磁场<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<p><img alt="image-20241028112935269" src="C:\Users\lenovo\AppData\Roaming\Typora\typora-user-images\image-20241028112935269.png" /></p>
+<p><span class="arithmatex">\(i_0\)</span> 为导线内总电流， <span class="arithmatex">\(R\)</span> 为导线半径，<span class="arithmatex">\(B\)</span> 为半径为 <span class="arithmatex">\(r\)</span> 的环上磁场强度。</p>
+<p>内部
+<script type="math/tex; mode=display">
+\oint Bdl=B\cdot 2\pi r=\mu_0 i=\mu_0jS=\mu_0\frac{i_0}{\pi R^2}\pi r^2\\
+B=\frac{\mu_0i_0r}{2\pi R^2}
+</script>
+</p>
+<p>外部
+<script type="math/tex; mode=display">
+B=\frac{\mu_0i_0}{2\pi r}
+</script>
+</p>
+<h3 id="_11">无限大平面内一排导线的磁场<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<p><img alt="image-20241028113320184" src="C:\Users\lenovo\AppData\Roaming\Typora\typora-user-images\image-20241028113320184.png" /></p>
+<h3 id="_12">无限长通电螺线管内部磁场<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<p>就是按一条直径切分，左右两边是方向相反的一排通电导线，就是上面的值乘两倍。
+<script type="math/tex; mode=display">
+B=\mu_0ni
+</script>
+</p>
+<h3 id="n">N圈螺线环<a class="headerlink" href="#n" title="Permanent link">&para;</a></h3>
+<p>根据安培定律，有
+<script type="math/tex; mode=display">
+\oint B\cdot dl=\mu_0 N i\\
+B=\frac{\mu_0 Ni}{2\pi r}
+</script>
+</p>
+<h2 id="_13">带电导线受到的安培力<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h2>
+<div class="arithmatex">\[
+dF=ids\times B
+\]</div>
+<p>所以你 <span class="arithmatex">\(ds\)</span> 求和就是从电流起始点到电流终点的位移，所以这个长度就是起点和终点之间的长度。</p>
+<p>就是满足 <span class="arithmatex">\(ids_1\times B+ids_2\times B+\cdots +ids_n\times B=i(ds_1+ds_2+\cdots +ds_n)\times B=ids\times B\)</span></p>
+<h3 id="_14">两平行导线<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
+<p>假设电流方向同向，有其中一根导线在 <span class="arithmatex">\(r_0\)</span> 处产生磁场为 <span class="arithmatex">\(B=\frac{\mu_0i_1}{2\pi r_0}\)</span> ，而两根导线之间距离为 <span class="arithmatex">\(d\)</span> ，所以实际就是 <span class="arithmatex">\(\frac{\mu_0i_1}{2\pi d}\)</span> 。</p>
+<p>然后产生的力为 <span class="arithmatex">\(dF=i_2ds\times B=i_2ds\times \frac{\mu_0i_1}{2\pi d}=i_1i_2\frac{\mu_0}{2\pi d}ds_2\)</span></p>
+<p><span class="arithmatex">\(f=\frac{dF_{12}}{ds_2}=\frac{\mu_0i_1i_2}{2\pi d}\)</span></p>
+<h2 id="_15">闭合回路电流再磁场中产生力矩<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h2>
+<p><img alt="image-20241108230827114" src="C:\Users\lenovo\AppData\Roaming\Typora\typora-user-images\image-20241108230827114.png" /></p>
+<p>注意力矩都是使线圈顺时针转动的所以是叠加。</p>
+<p>然后 <span class="arithmatex">\(\tau=\mu\times B\)</span> 是通用的，其中 <span class="arithmatex">\(\mu=iAn\)</span> ，<span class="arithmatex">\(n\)</span> 位法向量单位向量。</p>
+<h3 id="_16">对任意形状都成立的证明<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
+<p><img alt="image-20241108231342444" src="C:\Users\lenovo\AppData\Roaming\Typora\typora-user-images\image-20241108231342444.png" /></p>
+<h3 id="_17">磁偶极矩<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h3>
+<p>我们知道 <span class="arithmatex">\(\mu=iAn,\tau=\mu\times B\)</span> 。然后磁场做功为
+<script type="math/tex; mode=display">
+U=-\int F(rd\theta)=-\int \tau d\theta=\int\mu B\sin \theta d \theta=\mu\cdot B
+</script>
+有 <span class="arithmatex">\(\theta=0\)</span> 那么 <span class="arithmatex">\(U=0\)</span> 。</p>
+<p>所以我们有 <span class="arithmatex">\(U=-\mu\cdot B\)</span></p>
+<p>回顾电偶极矩
+<script type="math/tex; mode=display">
+p=qd,\tau=p\times E
+</script>
+有 <span class="arithmatex">\(U=-p\cdot E\)</span></p>
+<p>所以我们可以定义以下内容</p>
+<h4 id="_18">磁偶极矩的势能<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h4>
+<p><img alt="image-20241108231920034" src="C:\Users\lenovo\AppData\Roaming\Typora\typora-user-images\image-20241108231920034.png" /></p>
+<h2 id="_19">电荷在磁场中的运动<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h2>
+<div class="arithmatex">\[
+F=qv\times B=qvB\sin \theta
+\]</div>
+<p><strong>洛伦茨力和安培力的关系</strong>
+<script type="math/tex; mode=display">
+\Delta q=enA\cdot u\Delta t\\
+i=\frac{\Delta q}{\Delta t}=nAue\\
+F=\int e(nAu\Delta t)u\times B=\int neAu \Delta s\times B=\int i\Delta s\times B=Bis
+</script>
+</p>
+<h3 id="vperp_b"><span class="arithmatex">\(v\perp B\)</span> 做圆周运动<a class="headerlink" href="#vperp_b" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[
+F=qv\times B\\
+qvB=mv^2/R,R=\frac{mv}{Bq}\\
+T=\frac{2\pi R}{v}=\frac{2\pi m}{qB}\\
+f=\frac{1}{T}=\frac{qB}{2\pi m}
+\]</div>
+<h3 id="case">不垂直的case<a class="headerlink" href="#case" title="Permanent link">&para;</a></h3>
+<p><img alt="image-20241108233736201" src="C:\Users\lenovo\AppData\Roaming\Typora\typora-user-images\image-20241108233736201.png" /></p>
+<h2 id="_20">质谱仪和速度选择器<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h2>
+<p><img alt="image-20241108235323380" src="C:\Users\lenovo\AppData\Roaming\Typora\typora-user-images\image-20241108235323380.png" /><img alt="image-20241108235412777" src="C:\Users\lenovo\AppData\Roaming\Typora\typora-user-images\image-20241108235412777.png" /></p>
+<h2 id="_21">回旋加速器<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h2>
+<p><img alt="image-20241109000035544" src="C:\Users\lenovo\AppData\Roaming\Typora\typora-user-images\image-20241109000035544.png" /></p>
+<h2 id="_22">相对论效应<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h2>
+<p><img alt="image-20241109000151245" src="C:\Users\lenovo\AppData\Roaming\Typora\typora-user-images\image-20241109000151245.png" /></p>
+<h2 id="_23">霍尔效应<a class="headerlink" href="#_23" title="Permanent link">&para;</a></h2>
+<p><img alt="image-20241109000226674" src="C:\Users\lenovo\AppData\Roaming\Typora\typora-user-images\image-20241109000226674.png" /></p>
+<p><img alt="image-20241109002617372" src="C:\Users\lenovo\AppData\Roaming\Typora\typora-user-images\image-20241109002617372.png" /></p>
+<h2 id="_24">注意<a class="headerlink" href="#_24" title="Permanent link">&para;</a></h2>
+<p>角频率就是角速度。</p>
+<p>即 <span class="arithmatex">\(\omega\)</span> 就是 frequency of revolution， <span class="arithmatex">\(\omega/2\pi\)</span> 是转速，跟频率没关系。</p>
+<p>你固定体电荷密度就没有电荷平衡这回事了，你电荷都动不了哪来平衡。</p>
+<p>注意没有厚度的无限大和有厚度的无限大平面做法不同的啦！</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 - 2099 wh2005
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tracking", "navigation.tabs", "navigation.indexes", "toc.follow", "navigation.top", "header.autohide", "search.share", "search.suggest", "search.highlight", "header.autohide", "content.code.copy", "content.tabs.link"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.081f42fc.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,1286 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="wh2005">
+      
+      
+        <link rel="canonical" href="https://freewh2005.github.io/ClassNotes/%E6%A6%82%E7%8E%87%E8%AE%BA%E7%AC%AC%E4%B8%89%E7%AB%A0.html">
+      
+      
+      
+      
+      <link rel="icon" href="../assets/logo.jpg">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.24">
+    
+    
+      
+        <title>概率论第三章 - wh2005's Notebooks</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6543a935.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/extra.css">
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../index.html" title="wh2005&#39;s Notebooks" class="md-header__button md-logo" aria-label="wh2005's Notebooks" data-md-component="logo">
+      
+  <img src="../assets/logo.jpg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            wh2005's Notebooks
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              概率论第三章
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="分享" aria-label="分享" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/freewh2005/freewh2005.github.io" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    wh2005/Notebooks
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../index.html" class="md-tabs__link">
+        
+  
+    
+  
+  主页
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="%E6%99%AE%E7%89%A92.html" class="md-tabs__link">
+          
+  
+    
+  
+  课程笔记
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../index.html" title="wh2005&#39;s Notebooks" class="md-nav__button md-logo" aria-label="wh2005's Notebooks" data-md-component="logo">
+      
+  <img src="../assets/logo.jpg" alt="logo">
+
+    </a>
+    wh2005's Notebooks
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/freewh2005/freewh2005.github.io" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    wh2005/Notebooks
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    主页
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    课程笔记
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            课程笔记
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    普物2(H)
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            普物2(H)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="%E6%99%AE%E7%89%A92.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 28 电势能和电势
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="%E6%99%AE%E7%89%A929-30.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 29(30) 电容器和电介质
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="%E6%99%AE%E7%89%A931.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 31 恒定电流
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="%E6%99%AE%E7%89%A932-33.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 32(33) 恒稳磁场
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="%E6%99%AE%E7%89%A934.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 34 法拉第电磁感应定律
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    普物实验2(H)
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            普物实验2(H)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="%E6%99%AE%E7%89%A9%E5%AE%9E%E9%AA%8C2.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7周小课题之微小位移
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    计组
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            计组
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="%E8%AE%A1%E7%BB%84%E7%AC%AC%E4%BA%8C%E7%AB%A0.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第二章
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    概率论
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            概率论
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="%E6%A6%82%E7%8E%87%E8%AE%BA%E7%AC%AC%E4%BA%8C%E7%AB%A0.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第二章
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="%E6%A6%82%E7%8E%87%E8%AE%BA%E7%AC%AC%E5%9B%9B%E7%AB%A0.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第四章
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      数学期望
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      方差
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      协方差
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      相关系数
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      矩
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      特征函数
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="_1">概率论第三章<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h2 id="_2">数学期望<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p><strong>离散型的数学期望：</strong> <span class="arithmatex">\(E\xi=\sum_k x_kp_k\)</span> 。若 <span class="arithmatex">\(\sum_k |x_k|p_k=\infty\)</span> 则数学期望不存在。（即绝对收敛）</p>
+<p><strong>连续型的数学期望：</strong> <span class="arithmatex">\(E\xi=\int_{-\infty}^{\infty}xp(x)dx\)</span> 。若 <span class="arithmatex">\(\int_{-\infty}^{\infty}|x|p(x)dx=\infty\)</span> 则数学期望不存在。</p>
+<p><strong>斯梯尔吉斯积分：</strong> <span class="arithmatex">\(E\xi =\int_{-\infty}^{\infty}x dF(x)\)</span> 因为 <span class="arithmatex">\(dF(x)=p(x)dx\)</span> 。</p>
+<p>对于斯梯尔吉斯积分，有 <span class="arithmatex">\(F(x)=\int_{-\infty}^{x}dF(x)\)</span> 。</p>
+<p>计算数学期望的另一个公式（类比前缀和） <span class="arithmatex">\(E\xi=\int_{0}^{\infty}P(\xi&gt;t)dt-\int_{-\infty}^{0}P(\xi\le t)dt\)</span> 。</p>
+<p><strong>定理3.1</strong> 两个随机变量 <span class="arithmatex">\(\xi,\eta\)</span> 满足 <span class="arithmatex">\(\eta=f(\xi)\)</span> ，令两者的分布函数分别是 <span class="arithmatex">\(F_{\eta},F_{\xi}\)</span> 。那么 <span class="arithmatex">\(\eta\)</span> 的期望就是 <span class="arithmatex">\(f(\xi)\)</span> 的期望。（注意我们令 <span class="arithmatex">\(p(x)\)</span> 表示 <span class="arithmatex">\(\xi\)</span> 的密度函数）
+<script type="math/tex; mode=display">
+E\eta=\int_{-\infty}^{\infty}xdF_{\eta}(x)=\int_{-\infty}^{\infty}f(x)dF_{\xi}(x)=\int_{-\infty}^{\infty}f(x)p(x)dx\\
+=\int_{-\infty}^{\infty}f(x)dF_{\eta}(x)\,\,\,\,\text{if <span class="arithmatex">\(\,\,\,\,p_{\eta}(x)=p_{\xi}(x)\)</span>}
+</script>
+这个式子表明，如果 <span class="arithmatex">\(\eta\)</span> 和 <span class="arithmatex">\(\xi\)</span> 同分布，即 <span class="arithmatex">\(\eta\)</span> 的密度函数也是 <span class="arithmatex">\(p(x)\)</span> ，那么必有 <span class="arithmatex">\(E f(\xi)=Ef(\eta)\)</span></p>
+<p>并且这个式子可以反过来说，如果 <span class="arithmatex">\(Ef(\xi)=Ef(\eta)\)</span> 那么 <span class="arithmatex">\(\xi,\eta\)</span> 同分布（前提是 <span class="arithmatex">\(\eta=f(\xi)\)</span> ）。</p>
+<p><strong>多元数学期望：</strong> <span class="arithmatex">\(Eg(\xi_1\cdots\xi_n)=\int_{-\infty}^{\infty}\cdots\int_{-\infty}^{\infty}g(x_1,\cdots x_n)dF(x_1,x_2,\cdots,x_m)\)</span> </p>
+<p>注意这里的 <span class="arithmatex">\(dF(x_1,\cdots x_n)\)</span> 不是表示一个全微分（<span class="arithmatex">\(\sum\)</span> 偏导乘上 <span class="arithmatex">\(d_{xi}\)</span> ） 。</p>
+<p>而是 <span class="arithmatex">\(\frac{\part F(x_1\cdots x_n)}{\part x_1\part x_2\cdots \part x_n}\)</span> 即 <span class="arithmatex">\(p(x_1,\cdots,x_n)\)</span> 概率密度函数。分布函数对每个方向都求偏导就是概率密度函数，很显然。记住这个式子，它就是这么规定的。</p>
+<p>对于二元函数
+<script type="math/tex; mode=display">
+E \xi\eta=\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}xydF(x,y)
+</script>
+<strong>线性性：</strong> <span class="arithmatex">\(E(\sum \xi_i)=\sum E(\xi_i),E(c\xi)=cE(\xi)\)</span></p>
+<p><strong>有界收敛定理：</strong> 假设 <span class="arithmatex">\(\forall w,\lim_{n\rightarrow \infty}\xi_{n}(w)=\xi(w)\)</span> 并且对于 <span class="arithmatex">\(\forall n\ge 1,|\xi_n|\le M\)</span> 其中 <span class="arithmatex">\(M\)</span> 为常数，那么有 <span class="arithmatex">\(\lim E\xi_n=E\xi\)</span> </p>
+<p>证明： <span class="arithmatex">\(E\xi_n-E\xi\le E|\xi_n-\xi|\)</span> </p>
+<p>对于任意给定的 <span class="arithmatex">\(\epsilon&gt;0\)</span> 记 <span class="arithmatex">\(A_n=\{w:|\xi_n(w)-\xi(w)|&gt;\epsilon\}\)</span> 则 <span class="arithmatex">\(\lim A_n=\empty\)</span> ，那么 <span class="arithmatex">\(P(A_n)\rightarrow 0\)</span> 。</p>
+<p>因为 <span class="arithmatex">\(|\xi_n(w)-\xi(w)|\le \epsilon +2M[w\in A_n]\)</span> </p>
+<p>所以 <span class="arithmatex">\(E|\xi_n-\xi|\le \int_{-\infty}^{\infty}p(x)(\epsilon+M[x\in A_n])dx=\epsilon+2MP(A_n)\)</span> 趋近于 <span class="arithmatex">\(0\)</span> ，证毕。</p>
+<p><strong>条件期望：</strong> 下面分别是离散型和连续型时的定义
+<script type="math/tex; mode=display">
+E(\eta|\xi=x)=\sum_jy_jp_{\eta|\xi}(y_j|x),p_{\eta|\xi}(y_j|x)=p(\eta=y_j,\eta=x)\\
+E(\eta|\xi=x)=\int_{-\infty}^{\infty}yp_{\eta|\xi}(y|x)dy=\int_{-\infty}^{\infty}ydF_{\eta|\xi}
+(y|x)
+</script>
+显然独立时 <span class="arithmatex">\(E(\eta|\xi=x)=E\eta\)</span></p>
+<p><strong>全期望公式：</strong> <span class="arithmatex">\(E\eta=\sum_iP(\xi=x_i)E(\eta|\xi=x_i)\)</span></p>
+<p><strong>条件期望的性质：</strong> </p>
+<ul>
+<li>线性性 <span class="arithmatex">\(E(a_1\eta_1+a_2\eta_2|\xi=x)=a_1E(\eta_1|\xi=x)+a_2E(\eta_2|\xi=x)\)</span></li>
+<li><span class="arithmatex">\(\eta_1\le \eta_2\)</span> 则 <span class="arithmatex">\(E(\eta_1|\xi=x)\le E(\eta_2|\xi=x)\)</span> </li>
+<li><span class="arithmatex">\(E(h(\xi)\eta|\xi)=h(\xi)E(\eta|\xi)\)</span> </li>
+<li>柯西不等式 <span class="arithmatex">\(|E(XY|Z)|\le \sqrt{E(X^2|Z)} \sqrt{E(Y^2|Z)}\)</span></li>
+</ul>
+<h2 id="_3">方差<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p><strong>定义：</strong>
+<script type="math/tex; mode=display">
+Var\xi=E(\xi-E\xi)^2= \int_{-\infty}^{\infty}(x-E\xi)^2dF_{\xi}(x)
+</script>
+注意 <span class="arithmatex">\(E(\xi-E\xi)^2=E[\xi^2-2\xi E\xi+(E\xi)^2]=E\xi^2-(E\xi)^2\)</span> </p>
+<p>所以 <span class="arithmatex">\(Var\xi=E\xi^2-(E\xi)^2\)</span></p>
+<p><strong>切比雪夫不等式：</strong>
+<script type="math/tex; mode=display">
+P(|\xi-E\xi|\ge\epsilon)\le \frac{Var\xi}{\epsilon^2}
+</script>
+证明：
+<script type="math/tex; mode=display">
+P(|\xi-E\xi|\ge \epsilon)=\int_{|\xi-E\xi|\ge \epsilon}dF(x)\\
+\le \int_{|\xi-E\xi|\ge \epsilon}\frac{(x-E\xi)^2}{\epsilon^2}dF(x)\\
+\le \frac1{\epsilon^2}\int_{-\infty}^{\infty}(x-E\xi)^2dF(x)\\
+=\frac{Var\xi}{\epsilon^2}
+</script>
+该不等式断言 <span class="arithmatex">\(\xi\)</span> 落在区间 <span class="arithmatex">\((-\infty,E\xi-\epsilon)\cup(E\xi+\epsilon,+\infty)\)</span> 的概率小于或等于 <span class="arithmatex">\(\frac{Var\xi}{\epsilon^2}\)</span></p>
+<p><strong>性质 1：</strong> <span class="arithmatex">\(Var\xi=0\)</span> 的充要条件是 <span class="arithmatex">\(P(x=c)=1\)</span> ，<span class="arithmatex">\(c\)</span> 为常数。</p>
+<p><strong>性质 2：</strong> <span class="arithmatex">\(Var(c\xi+b)=c^2Var(\xi)\)</span> 。</p>
+<p><strong>性质 3：</strong> 若 <span class="arithmatex">\(c\ne E\xi\)</span> 则 <span class="arithmatex">\(Var\xi&lt;E(\xi-c)^2\)</span> 。</p>
+<p>证明：将 <span class="arithmatex">\(Var\xi=E\xi^2-(E\xi)^2\)</span>拆开就证明完毕了。</p>
+<p><strong>最佳预测问题：</strong> 设 <span class="arithmatex">\(E\eta^2&lt;\infty,m(\xi)=E(\eta|\xi)\)</span> （就是 <span class="arithmatex">\(m\)</span> 为关于 <span class="arithmatex">\(\xi\)</span> 的一个函数 <span class="arithmatex">\(m(\xi=x)=E(\eta|\xi=x)\)</span> ），则对于任何实函数 <span class="arithmatex">\(g(x)\)</span> 有</p>
+<p><span class="arithmatex">\(E(\eta-m(\xi))^2\le  E(\eta-g(\xi))^2\)</span> 。</p>
+<p>证明：将 <span class="arithmatex">\(E(\eta-g(\xi))^2\)</span> 变成 <span class="arithmatex">\(E(\eta-m(\xi)+m(\xi)-g(\xi))^2\)</span> 拆开就可以证明。</p>
+<p><strong>性质 4：</strong> 多个随机变量之和的方差
+<script type="math/tex; mode=display">
+Var(\sum_{i=1}^n\xi_i)=\sum_{i=1}^{n}Var(\xi_i)+2\sum_{1\le i<j\le n}E(\xi_i-E\xi_i)(\xi_j-E\xi_j)
+</script>
+若 <span class="arithmatex">\(\xi_i\)</span> 互相独立，则 <span class="arithmatex">\(Var(\sum \xi_i)=\sum Var \xi_i\)</span></p>
+<p>注意后面那项在不独立的时候不为 <span class="arithmatex">\(0\)</span>，是要根据每种情况的密度函数乘上相应的函数值，到后面发现就是 <span class="arithmatex">\(2 Cov(\xi_i,\xi_j)\)</span> </p>
+<p>证明：
+<script type="math/tex; mode=display">
+Var(\sum_i \xi_i)=E(\sum_i \xi_i-E\sum_i \xi_i)^2=E(\sum_i (\xi_i-E\xi_i))^2\\
+=E\bigg[\sum_i(\xi_i-E\xi_i)^2+2\sum_{1\le i<j\le n}(\xi_i-E\xi_i)(\xi_j-E\xi_j)\bigg]\\
+=\sum_{i=1}^{n}Var(\xi_i)+2\sum_{1\le i<j\le n}E(\xi_i-E\xi_i)(\xi_j-E\xi_j)
+</script>
+</p>
+<h2 id="_4">协方差<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>对于多元随机向量，协方差表示各分量间相互关系的数字特征。符号 <span class="arithmatex">\(Cov(\xi_i,\xi_j)\)</span>
+<script type="math/tex; mode=display">
+Cov(\xi_i,\xi_j)=E(\xi_i-E\xi_i)(\xi_j-E\xi_j)=\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}(x-E\xi_i)(y-E\xi_j)dF_{ij}(x,y)=\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}(x-E\xi_i)(y-E\xi_j)p(x,y)dxdy
+</script>
+之前的式子可以写成
+<script type="math/tex; mode=display">
+Var(\sum_{i=1}^n\xi_i)=\sum_{i=1}^{n}Var(\xi_i)+2Cov(\xi_i,\xi_j)
+</script>
+可以发现，如果独立则 <span class="arithmatex">\(Cov(\xi_i,\xi_j)=0\)</span></p>
+<p><strong>性质 1 ：</strong>
+<script type="math/tex; mode=display">
+Cov(\xi,\eta)=E(\xi-E\xi)(\eta-E\eta)=E\bigg[\xi\eta-\eta E\xi-\xi E\eta +E\xi E\eta\bigg]=E\xi\eta-E\xi E\eta
+</script>
+可以看成乘积的期望和期望的乘积间的差值。</p>
+<p><strong>性质 2 ：</strong> 
+<script type="math/tex; mode=display">
+Cov(a\xi,b\eta)=abCov(\xi,\eta)
+</script>
+<strong>性质 3 ：</strong> 
+<script type="math/tex; mode=display">
+Cov(\sum_i \xi_i,\eta)=\sum_iCov(\xi_i,\eta)
+</script>
+<strong>协方差矩阵：</strong></p>
+<p>对于即向量 <span class="arithmatex">\(\xi=(\xi_1,\cdots,\xi_n)^{T}\)</span> （书上转置的标记为 <span class="arithmatex">\('\)</span>  ），用于观测 <span class="arithmatex">\(\xi_i,\xi_j\)</span> 向量各维之间的关系</p>
+<p>那么有
+<script type="math/tex; mode=display">
+B=E(\xi-E\xi)(\xi-E\xi)^{T}=
+\begin{bmatrix}
+b_{11} & b_{12} & \cdots & b_{1n} \\
+b_{21} & b_{22} & \cdots & b_{2n} \\
+\vdots & \vdots & \ddots & \vdots \\
+b_{n1} & b_{n2} & \cdots & b_{nn}
+\end{bmatrix}
+</script>
+</p>
+<p>其中 <span class="arithmatex">\(b_{i,j}=Cov(\xi_i,\xi_j)\)</span> 。</p>
+<p>根据性质， <span class="arithmatex">\(B\)</span> 是对称阵，且根据二次型的定义
+<script type="math/tex; mode=display">
+f(x)=\sum_{j,k} b_{jk}x_jx_k=\sum_{j,k}x_jx_kE(\xi_j-E\xi_j)(\xi_k-E\xi_k)=E(\sum_{j=1}^nx_j(\xi_j-E\xi_j))^2\ge 0
+</script>
+ 所以 <span class="arithmatex">\(B\)</span> 非负定。</p>
+<p><strong>线性变换后的协方差矩阵：</strong></p>
+<p>对于一组向量 <span class="arithmatex">\(\xi=(\xi_1,\cdots ,\xi_n)^T\)</span> ，那么对于一个 <span class="arithmatex">\(n\times n\)</span> 的矩阵 <span class="arithmatex">\(C\)</span> 可以对 <span class="arithmatex">\(\xi\)</span> 进行线性变换，得到 <span class="arithmatex">\(C\xi\)</span> 。</p>
+<p>那么 <span class="arithmatex">\(C\xi\)</span> 的协方差矩阵为 <span class="arithmatex">\(CBC^T\)</span> 。<span class="arithmatex">\(B\)</span> 为原向量的协方差矩阵。</p>
+<p>因为
+<script type="math/tex; mode=display">
+EC(\xi-E\xi)(C(\xi-E\xi))^T=EC(\xi-E\xi)(\xi-E\xi)^TC^T=CBC^T
+</script>
+上式成立是因为期望的线性性，你线性变换又不会影响其中对 <strong>概率与值的乘积</strong> 求和的计算，所以可以拿出来。</p>
+<p><strong>多元正态分布</strong></p>
+<p>多元向量 <span class="arithmatex">\(\xi\)</span> 满足正态分布 <span class="arithmatex">\(N(\mu,B)\)</span> ，那么期望为 <span class="arithmatex">\(\mu\)</span> ，协方差矩阵为 <span class="arithmatex">\(B\)</span> 。</p>
+<p>若 <span class="arithmatex">\(\xi_1\sim \xi_n\)</span> 满足相互独立的标准正太随机变量，那么 <span class="arithmatex">\(\mu=0,B=I\)</span> 。普通的正太随机变量可以由这个进行线性变换 <span class="arithmatex">\(L\xi+\mu\)</span> 来得到。</p>
+<h2 id="_5">相关系数<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<p>令
+<script type="math/tex; mode=display">
+\xi^*=\frac{(\xi-E\xi)}{\sqrt{Var\xi}},\eta^*=\frac{(\eta-E\eta)}{\sqrt{Var\eta}}
+</script>
+则 
+<script type="math/tex; mode=display">
+r=Cov(\xi^*,\eta^*)=\frac{E(\xi-E\xi)(\eta-E\eta)}{\sqrt{Var\xi Var\eta}}=E\xi^*\eta^*
+</script>
+为 <span class="arithmatex">\(\xi,\eta\)</span> 的相关系数。</p>
+<p><strong>柯西不等式:</strong> （就跟高中是一样的，只不过求和延展成了积分啥的。）
+<script type="math/tex; mode=display">
+|E\xi\eta|^2\le E\xi^2E\eta^2
+</script>
+<strong>性质1</strong> <span class="arithmatex">\(|r|=|E\xi^*\eta^*|\le \sqrt{E\xi^{*2}E\eta^{*2}}=\sqrt{Var\xi^*Var\eta^*}= 1\)</span> </p>
+<p>且根据柯西不等式成立条件由</p>
+<p><span class="arithmatex">\(r=1\)</span> 当且仅当 <span class="arithmatex">\(P(\xi^*=\eta^*)=1\)</span> ，<span class="arithmatex">\(r=-1\)</span> 当且仅当 <span class="arithmatex">\(P(\xi^*=-\eta^*)=1\)</span> 。</p>
+<p>若 <span class="arithmatex">\(r=0\)</span> 则 <span class="arithmatex">\(\xi,\eta\)</span> 不相关。</p>
+<p><strong>不相关的等价条件</strong></p>
+<p>以下条件互相等价</p>
+<ul>
+<li>
+<p><span class="arithmatex">\(\xi,\eta\)</span> 不相关</p>
+</li>
+<li>
+<p><span class="arithmatex">\(Cov(\xi,\eta)=0\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(E\xi\eta=E\xi E\eta\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(Var(\xi+\eta)=Var \xi+Var\eta\)</span></p>
+</li>
+</ul>
+<p>注：这些性质不能推广到 <span class="arithmatex">\(n\ge 3\)</span> 上。两两不相关只能推出 <span class="arithmatex">\(Var(\sum)=\sum Var\)</span> ，不能推出 <span class="arithmatex">\(E\Pi=\Pi E\)</span> ，不能互相推出。</p>
+<p><strong>性质</strong></p>
+<p>独立能推出不相关，但<strong>不相关不能推出独立</strong>。</p>
+<hr />
+<p>注：<strong>联合正态分布下</strong> ，独立和不相关等价。同时还有两个正态随机变量的联合分布<strong>不一定</strong>是联合正态分布，如下面这个例子。</p>
+<p>联合正态分布能得到边缘分布是正态随机变量，但是满足边缘分布是正态随机变量的不一定是联合正态分布。</p>
+<p><img alt="img" src="https://tiku-data.cdn.bcebos.com/originalpic/a5f9ddb860e717d411dac8bef6a27019?auth_key=2320280655-0-0-07f2434d9441c20ac992ef0210c768e8" /></p>
+<hr />
+<p>例子：<span class="arithmatex">\(\theta\sim U(0,2\pi)\)</span> ， <span class="arithmatex">\(\xi=\cos \theta,\eta=\sin\theta\)</span> ，有 <span class="arithmatex">\(\xi^2+\eta^2=1\)</span> ，显然两者不独立。</p>
+<p>但是
+<script type="math/tex; mode=display">
+E\xi=0,E\eta=0,E\xi\eta=E\sin\theta\cos\theta=E\frac12\sin2\theta-9
+</script>
+所以 <span class="arithmatex">\(Cov(\xi,\eta)=E\xi\eta-E\xi E\eta=0\)</span> ，两者不相关，但不独立。</p>
+<p><strong>二元正态分布的协方差和相关系数</strong> （涉及一些关于正态函数的运算）</p>
+<p><span class="arithmatex">\(\xi,\eta\sim N(a,b,\sigma_1^2,\sigma_2^2,r)\)</span> ，求 <span class="arithmatex">\(Cov(\xi,\eta)\)</span> 和 <span class="arithmatex">\(r_{\xi,\eta}\)</span> （验证相关系数就是给定的常数 <span class="arithmatex">\(r\)</span> ）（以下积分号不标就是从负无穷到正无穷）
+<script type="math/tex; mode=display">
+\begin{align}
+    Cov&=\int\int(x-a)(y-b)p(x,y)dxdy\\
+    &=\frac{1}{2\pi\sigma_1\sigma_2\sqrt{1-r^2}}\int\int(x-a)(y-b)\exp\bigg\{-\frac{1}{2(1-r^2)}(\frac{x-a}{\sigma_1}-r\frac{y-b}{\sigma_2})^2-\frac{(y-b)^2}{2\sigma_2^2}\bigg\}\\
+    z&=\frac{x-a}{\sigma_1}-r\frac{y-b}{\sigma_2},t=\frac{y-b}{\sigma_2}\\
+    \frac{x-a}{\sigma_1}&=z+rt,J=\frac{\part(x,y)}{\part(z,t)}=\sigma_1\sigma_2\\
+    \text{多元变量代换中}&\text{雅各比的作用}\\
+    \because dxdy&=Jdzdt\\
+    \therefore \int\int f(x,y)dxdy&=\int\int f(x(z,t),y(z,t))Jdzdt=\int\int p(z,t)dzdt\\
+    \therefore p(z,t)&=f(x(z,t),y(z,t))J\\
+    \text{本题中应用如下}&\\
+    Cov(\xi,\eta)&=\frac{J}{2\pi \sigma_1\sigma_2\sqrt{1-r^2}}\int\int(zt+rt^2)\sigma_1\sigma_2e^{-\frac{z^2}{2(1-r^2)}}e^{-\frac{t^2}{2}}dzdt\\
+    &=r\sigma_1\sigma_2\\
+    r_{\xi,\eta}&=\frac{Cov(\xi,\eta)}{\sqrt{Var\xi Var\eta}}=r
+\end{align}
+</script>
+在上面的计算中，要用到对 <span class="arithmatex">\(e^{-t^2}\)</span> 的积分，我这里罗列下
+$$
+\int_{0}<sup -t_2="-t^2">{\infty}e</sup>\
+\int te}dt=\frac{\sqrt{\pi}}{2<sup>{-t</sup>2}dt=-\frac{e<sup>{-t</sup>2}}{2}\
+\int_{0}<sup>{\infty}t</sup>2e<sup>{-t</sup>2}dt=\frac{\sqrt{\pi}}{4}\
+\int_{-\infty}<sup>{\infty}x</sup>ne<sup>{-\frac{x</sup>2}{2\sigma^2}}=
+\begin{cases}
+0,n=2k+1\
+\sqrt{2\pi}(n-1)!!\sigma^{n+1},n=2k</p>
+<p>\end{cases}
+\
+<script type="math/tex; mode=display">
+不过这里有更概率论的做法，可以避免二重积分的计算。
+</script>
+Cov(\xi,\eta)=E[(\xi-a)(\eta-b)]=E[E((\xi-a)(\eta-b)|\xi)]
+$$
+其实这就是全概率公式，在 <span class="arithmatex">\(\xi=x\)</span> 的情况下期望值乘上 <span class="arithmatex">\(\xi=x\)</span> 的概率。</p>
+<p>而在之前一开始学多元正态函数时有
+<script type="math/tex; mode=display">
+p(x,y)=\frac{1}{\sqrt{2\pi}\sigma_1}\exp\bigg\{-\frac{(x-a)^2}{2\sigma_1^2}\bigg\}\cdot \frac{1}{\sqrt{2\pi}\sigma_2\sqrt{1-r^2}}\exp\bigg\{-\frac{[y-b-\frac{r\sigma_2}{\sigma_1}(x-a)]^2}{2\sigma_2^2(1-r^2)}\bigg\}
+</script>
+这里第一部分是 <span class="arithmatex">\(N(a,\sigma_1^2)\)</span> 的密度，第二部分当 <span class="arithmatex">\(x\)</span> 固定为某个正态密度时对应 <span class="arithmatex">\(y\)</span> 的积分为 <span class="arithmatex">\(1\)</span> 。</p>
+<p>所以 <span class="arithmatex">\(\xi\)</span> 的边际密度为 
+<script type="math/tex; mode=display">
+p_\xi(x)=\frac{1}{\sqrt{2\pi}\sigma_1}\exp\bigg\{-\frac{(x-a)^2}{2\sigma_1^2}\bigg\}
+</script>
+（这里可以推出二元正态分布 <span class="arithmatex">\(\xi\sim N(a,\sigma_1^2),\eta\sim N(b,\sigma_2^2)\)</span> ，这点是与 <span class="arithmatex">\(r\)</span> 无关的）</p>
+<p>由此可以得到第二部分就是在给定 <span class="arithmatex">\(\xi=x\)</span> 时 <span class="arithmatex">\(\eta\)</span> 的分布
+<script type="math/tex; mode=display">
+P_{\eta|\xi}(y|x)=\frac{1}{\sqrt{2\pi}\sigma_2\sqrt{1-r^2}}\exp\bigg\{-\frac{[y-b-\frac{r\sigma_2}{\sigma_1}(x-a)]^2}{2\sigma_2^2(1-r^2)}\bigg\}
+</script>
+即 <span class="arithmatex">\(\eta\sim N(b+r\sigma_2(x-a)/\sigma_1,(1-r^2)\sigma_2^2)\)</span> 。</p>
+<p>所以 <span class="arithmatex">\(E((\xi-a)(\eta-b)|\xi=x)=(x-a)E(\eta-b|\xi=x)=r\sigma_2(x-a)^2/\sigma_1\)</span>
+<script type="math/tex; mode=display">
+Cov(\xi,\eta)=E\bigg[r\sigma_2(\xi-a)^2/\sigma_1\bigg]=r\frac{\sigma_2}{\sigma_1}E(\xi-a)^2=r\sigma_2\sigma_1
+</script>
+</p>
+<h2 id="_6">矩<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<p><strong>原点矩：</strong> <span class="arithmatex">\(m_k=E\xi^k\)</span> 为 <span class="arithmatex">\(\xi\)</span> 的 <span class="arithmatex">\(k\)</span> 阶原点矩。（一阶原点矩为期望）</p>
+<p><strong>中心矩：</strong> <span class="arithmatex">\(c_k=E(\xi-E\xi)^k\)</span> 为 <span class="arithmatex">\(\xi\)</span> 的 <span class="arithmatex">\(k\)</span> 阶中心矩。（二阶中心矩为方差）</p>
+<p><strong>偏态系数：</strong> <span class="arithmatex">\(c_3/c_2^{3/2}\)</span> ，大于 <span class="arithmatex">\(0\)</span> 为正偏态，小于 <span class="arithmatex">\(0\)</span> 为负偏态</p>
+<p><strong>峰态系数：</strong> <span class="arithmatex">\(c_4/c_2^2-3\)</span> ，大于 <span class="arithmatex">\(0\)</span> 表示该分布密度函数比正态分布密度函数更为尖峭。</p>
+<p>可以用原点矩表示中心矩（把式子展开，各自求期望得）
+<script type="math/tex; mode=display">
+c_k=\sum_{r=0}^k(-1)^r\binom{k}{r}m_1^rm_{k-r}
+</script>
+然后可以用反过来表示（不知道是不是二项式反演啥工具，反正就是可以）
+<script type="math/tex; mode=display">
+m_k=\sum_{r=0}^k(-1)^r\binom{k}{r}m_1^rc_{k-r}
+</script>
+<strong><span class="arithmatex">\(\alpha\)</span>阶绝对矩：</strong><span class="arithmatex">\(M_{\alpha}=E|\xi|^{\alpha}\)</span></p>
+<h2 id="_7">特征函数<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<p>设 <span class="arithmatex">\(\xi\)</span> 为实随机变量，称
+<script type="math/tex; mode=display">
+f(t)=Ee^{it\xi},-\infty <t<\infty
+</script>
+由期望得
+<script type="math/tex; mode=display">
+f(t)=\int e^{itx}dF(x)
+</script>
+离散型
+<script type="math/tex; mode=display">
+f(t)=\sum p_ne^{itx_n}
+</script>
+连续型
+<script type="math/tex; mode=display">
+f(t)=\int e^{itx}p(x)dx
+</script>
+其实就是 <span class="arithmatex">\(p(x)\)</span> 的傅里叶变换。</p>
+<p>具体每个分布的特征函数参考书第 140 页。</p>
+<p><strong>性质1</strong> <span class="arithmatex">\(|f(t)|\le f(0)=1,f(-t)=\overline{f(t)}\)</span></p>
+<p>因为 <span class="arithmatex">\(|f(t)|=|\int e^{itx}dF(x)|\le \int|e^{itx}|dF(x)=1\)</span></p>
+<p>第二个显然，因为涉及到 <span class="arithmatex">\(t\)</span> 的只有 <span class="arithmatex">\(e^{i(-t)x}=\cos(-tx)+i\sin(-tx)=\cos(tx)-i\sin(tx)\)</span> 。</p>
+<p><strong>衍伸</strong> <span class="arithmatex">\(f(-t)\)</span> 就是 <span class="arithmatex">\(-\xi\)</span> 的特征函数，通过给定的结论十分好求。</p>
+<p>而这里又可以说到令 <span class="arithmatex">\(\xi_1,\xi_2\)</span> 独立同分布，那么令 <span class="arithmatex">\(\eta=-\xi_2\)</span> </p>
+<p>有 <span class="arithmatex">\(\xi+\eta\)</span> 的特征函数为 <span class="arithmatex">\(f(t)\cdot\overline{f(t)}=|f(t)|^2\)</span> </p>
+<p>所以我们可以有<strong>结论</strong>当 <span class="arithmatex">\(f(t)\)</span> 是特征函数时， <span class="arithmatex">\(\overline{f(t)}\)</span> 和 <span class="arithmatex">\(|f(t)|^2\)</span> 也是。</p>
+<p><strong>性质2</strong> <span class="arithmatex">\(f(t)\)</span> 在 <span class="arithmatex">\((-\infty,\infty)\)</span> 上一致连续。</p>
+<p><strong>性质3</strong> <span class="arithmatex">\(f(t)\)</span> 是非负定的。函数非负定定义如下，对于任意正整数 <span class="arithmatex">\(n\)</span> ，以及 <span class="arithmatex">\(t_1,\cdots,t_n\)</span>，复数 <span class="arithmatex">\(\lambda_1,\cdots,\lambda_n\)</span>
+<script type="math/tex; mode=display">
+\sum_{k=1}^n\sum_{j=1}^nf(t_k-t_j)\lambda_k\overline{\lambda_j}\ge 0
+</script>
+<strong>波赫纳尔-辛钦定理</strong>  <span class="arithmatex">\(f(t)\)</span> 为特征函数的充要条件为 <span class="arithmatex">\(f(t)\)</span> 非负定，连续且 <span class="arithmatex">\(f(0)=1\)</span> 。</p>
+<p>不过判断一个函数是否非负定十分困难，所以这个判别方式用处不大。</p>
+<p><strong>性质4</strong> 若 <span class="arithmatex">\(\xi_1,\cdots,\xi_n\)</span> <strong>相互独立</strong>，特征函数分别为 <span class="arithmatex">\(f_1(t),\cdots,f_n(t)\)</span> ，且 <span class="arithmatex">\(\eta=\xi_1+\cdots+\xi_n\)</span> ，则 <span class="arithmatex">\(\eta\)</span> 的特征函数为
+<script type="math/tex; mode=display">
+f_{\eta}(t)=f_1(t)\cdots f_n(t)
+</script>
+什么，你说如果是减法呢？</p>
+<p>那你可以先求 <span class="arithmatex">\(-\xi_i\)</span> 的特征函数啊。</p>
+<p><strong>性质5</strong> 若 <span class="arithmatex">\(E\xi^n\)</span> 存在，则 <span class="arithmatex">\(f(t)\)</span> <span class="arithmatex">\(n\)</span> 次可微，进而当 <span class="arithmatex">\(k\le n\)</span> 时
+<script type="math/tex; mode=display">
+f^{(k)}(t)=i^k\int_{-\infty}^{\infty}x^ke^{itx}dF(x),f^{(k)}(0)=i^kE\xi^k\\
+</script>
+特别的，当 <span class="arithmatex">\(E\xi^2\)</span> 存在时， <span class="arithmatex">\(E\xi=-if'(0),E\xi^2=-f''(0),Var\xi=-f''(0)+[f'(0)]^2\)</span></p>
+<p><strong>性质6</strong> 设 <span class="arithmatex">\(\eta=a\xi+b\)</span> ，其中 <span class="arithmatex">\(a,b\)</span> 为任意常数，则
+<script type="math/tex; mode=display">
+f_{\eta}(t)=e^{ibt}f(at)
+</script>
+因为 <span class="arithmatex">\(Ee^{i(a\xi +b)t}=e^{ibt}Ee^{iat\xi}\)</span></p>
+<p><strong>唯一性定理</strong> 分布函数可以由特征函数唯一确定。</p>
+<p><strong>逆傅里叶变换</strong> <span class="arithmatex">\(f(t)\)</span> 为特征函数是分布函数 <span class="arithmatex">\(p(x)\)</span> 的傅里叶变换。</p>
+<p>那么有 
+$$
+F&rsquo;(x)=p(x)=\frac{1}{2\pi}\int_{-\infty}<sup -itx="-itx">{\infty}e</sup>f(t)dt</p>
+<p>$$
+到目前为止，我们证明 <span class="arithmatex">\(f(t)\)</span> 是某随机变量的特征函数都是通过构造来解决的，因为提供的逆转公式和逆傅里叶变换计算都十分困难，它们的意义主要都是理论上的。</p>
+<p><strong>例</strong> 证明 <span class="arithmatex">\(f(t)=\cos t\)</span> 是某随机变量的特征函数
+<script type="math/tex; mode=display">
+f(t)=\cos t=\frac12(e^{it}+e^{-it})
+</script>
+所以它是离散型随机变量，分布列为
+<script type="math/tex; mode=display">
+\bigg[
+\begin{matrix}
+1&-1\\
+\frac12&\frac12
+\end{matrix}
+\bigg]
+</script>
+<strong>分布函数的可加性</strong></p>
+<p><strong>例</strong> <span class="arithmatex">\(\xi_j\)</span> 服从二项分布 <span class="arithmatex">\(B(n_j,p),j=1\sim k\)</span> 且互相独立，求 <span class="arithmatex">\(\sum \xi_j\)</span> 的分布。</p>
+<p><span class="arithmatex">\(\xi_j\)</span> 的特征函数为 <span class="arithmatex">\((pe^{it}+q)^{n_j},q=1-p\)</span> ，那么 <span class="arithmatex">\(\sum \xi_j\)</span> 的特征函数为
+<script type="math/tex; mode=display">
+(pe^{it}+q)^{\sum n_j}
+</script>
+由唯一性定理， <span class="arithmatex">\(\sum \xi_j\)</span> 服从二项分布 <span class="arithmatex">\(B(\sum n_j,p)\)</span></p>
+<p><strong>多元特征函数</strong></p>
+<p>定义是：设 <span class="arithmatex">\(\xi=(\xi_1,\cdots,\xi_n)\)</span> 的分布函数为 <span class="arithmatex">\(F(x_1,\cdots ,x_n)\)</span> ，称
+<script type="math/tex; mode=display">
+f(t_1,\cdots,t_n)=Ee^{i(t_1\xi_1+\cdots+t_n\xi_n)}=\int\cdots\int e^{i(t_1x_1+\cdots t_nx_n)}dF(x_1,\cdots,x_n)
+</script>
+盲猜一手不考，历年题遇到再填坑。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 - 2099 wh2005
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tracking", "navigation.tabs", "navigation.indexes", "toc.follow", "navigation.top", "header.autohide", "search.share", "search.suggest", "search.highlight", "header.autohide", "content.code.copy", "content.tabs.link"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.081f42fc.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      
+    
+  </body>
+</html>

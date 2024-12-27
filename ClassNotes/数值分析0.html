@@ -1,0 +1,1319 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="wh2005">
+      
+      
+        <link rel="canonical" href="https://freewh2005.github.io/ClassNotes/%E6%95%B0%E5%80%BC%E5%88%86%E6%9E%900.html">
+      
+      
+      
+      
+      <link rel="icon" href="../assets/logo.jpg">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.24">
+    
+    
+      
+        <title>Chapter1 数学基础 - wh2005's Notebooks</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6543a935.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/extra.css">
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#chapter1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../index.html" title="wh2005&#39;s Notebooks" class="md-header__button md-logo" aria-label="wh2005's Notebooks" data-md-component="logo">
+      
+  <img src="../assets/logo.jpg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            wh2005's Notebooks
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Chapter1 数学基础
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="分享" aria-label="分享" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/freewh2005/freewh2005.github.io" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    wh2005/Notebooks
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../index.html" class="md-tabs__link">
+        
+  
+    
+  
+  主页
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="%E6%99%AE%E7%89%A92.html" class="md-tabs__link">
+          
+  
+    
+  
+  课程笔记
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../index.html" title="wh2005&#39;s Notebooks" class="md-nav__button md-logo" aria-label="wh2005's Notebooks" data-md-component="logo">
+      
+  <img src="../assets/logo.jpg" alt="logo">
+
+    </a>
+    wh2005's Notebooks
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/freewh2005/freewh2005.github.io" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    wh2005/Notebooks
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    主页
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    课程笔记
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            课程笔记
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    普物2(H)
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            普物2(H)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="%E6%99%AE%E7%89%A92.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 28 电势能和电势
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="%E6%99%AE%E7%89%A929-30.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 29(30) 电容器和电介质
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="%E6%99%AE%E7%89%A931.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 31 恒定电流
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="%E6%99%AE%E7%89%A932-33.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 32(33) 恒稳磁场
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="%E6%99%AE%E7%89%A934.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 34 法拉第电磁感应定律
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    普物实验2(H)
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            普物实验2(H)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="%E6%99%AE%E7%89%A9%E5%AE%9E%E9%AA%8C2.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7周小课题之微小位移
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    计组
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            计组
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="%E8%AE%A1%E7%BB%84%E7%AC%AC%E4%BA%8C%E7%AB%A0.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第二章
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    概率论
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            概率论
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="%E6%A6%82%E7%8E%87%E8%AE%BA%E7%AC%AC%E4%BA%8C%E7%AB%A0.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第二章
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="%E6%A6%82%E7%8E%87%E8%AE%BA%E7%AC%AC%E5%9B%9B%E7%AB%A0.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第四章
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      截断误差和舍入误差
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      绝对误差与相对误差
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      秦九韶算法
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      算法稳定性和收敛性
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="算法稳定性和收敛性">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stability" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stability 稳定性
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linearexponential_growth" class="md-nav__link">
+    <span class="md-ellipsis">
+      Linear/Exponential Growth 线性增长和指数增长
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="chapter1">Chapter1 数学基础<a class="headerlink" href="#chapter1" title="Permanent link">&para;</a></h1>
+<h2 id="_1">截断误差和舍入误差<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<ul>
+<li>截断误差 Truncation Error </li>
+</ul>
+<p>对于无限级数使用<strong>有限位求和</strong>来近似无穷级数的和所产生的误差。</p>
+<ul>
+<li>
+<p>舍入误差 Roundoff Error </p>
+</li>
+<li>
+<p>概念：计算机只会涉及有限位数的算数运算，所以不会存的下无限维小数，所以有舍入</p>
+</li>
+<li>
+<p>两种方法</p>
+<ul>
+<li>截断法（Chopping）</li>
+</ul>
+<p>虽然都称为截断，但是英文是不同的，确实是两个东西，属于舍入误差。比如0.119 <span class="arithmatex">\(\rightarrow\)</span> 0.11，还有-0.119 <span class="arithmatex">\(\rightarrow\)</span> -0.11</p>
+<ul>
+<li>舍入法（Rounding）</li>
+</ul>
+<p>四舍五入，0.119<span class="arithmatex">\(\rightarrow\)</span> 0.12 ，注意负数的舍入法其实就是把它看成正数然后四舍五入，外面添个负号就可以了。如-0.119 <span class="arithmatex">\(\rightarrow\)</span> -0.12</p>
+<p>注意这两种方法都是最后保留给定的有效位数，有效位数是从左到右第一个非零位开始算起，数给定位数位，如保留二位，-1.19是-1.2，-0.119是-0.12，最后一位所表达的位阶不同。</p>
+<p>然后注意每一步计算时都是要进行保留若干位，所以得到的结果会随着计算，误差不断变大。</p>
+</li>
+</ul>
+<p>误差计算举例：</p>
+<p>Evaluate <span class="arithmatex">\(f(x)=x^3−6.1x^2+3.2x+1.5\)</span> at <span class="arithmatex">\(x=4.71\)</span> using 3-digit arithmetic(3位有效数字).</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"></th>
+<th style="text-align: left;"><span class="arithmatex">\(x\)</span></th>
+<th style="text-align: left;"><span class="arithmatex">\(x^2\)</span></th>
+<th style="text-align: left;"><span class="arithmatex">\(x^3\)</span></th>
+<th style="text-align: left;"><span class="arithmatex">\(6.1x^2\)</span></th>
+<th style="text-align: left;"><span class="arithmatex">\(3.2x\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">exact</td>
+<td style="text-align: left;"><span class="arithmatex">\(4.71\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(22.1841\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(104.487111\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(135.32301\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(15.072\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">Chopping</td>
+<td style="text-align: left;"><span class="arithmatex">\(4.71\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(22.1\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(104\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(6.1∗22.1=134.81≈134\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(15.0\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">Rounding</td>
+<td style="text-align: left;"><span class="arithmatex">\(4.71\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(22.2\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(105\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(6.1∗22.2=135.42≈135\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(15.1\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Exact value: <span class="arithmatex">\(f(4.71)=104.487111−135.32301+15.072+1.5=−14.263899\)</span></p>
+<p>Chopping: <span class="arithmatex">\(f(4.71)=104−134+15.0+1.5=−13.5\)</span></p>
+<ul>
+<li>Relative error: <span class="arithmatex">\(\frac{|−14.263899+13.5|}{|−14.263899|}≈5.35\%\)</span></li>
+</ul>
+<p>Rounding: <span class="arithmatex">\(f(4.71)=105−135+15.1+1.5=−13.4\)</span></p>
+<ul>
+<li>Relative error: <span class="arithmatex">\(\frac{|−14.263899+13.4|}{|−14.263899|}≈6.06\%\)</span></li>
+</ul>
+<p>可见，有时候舍入误差比截断误差更大。</p>
+<h2 id="_2">绝对误差与相对误差<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<ul>
+<li>绝对误差 <span class="arithmatex">\(|p-p^*|\)</span></li>
+<li>相对误差 <span class="arithmatex">\(\frac{|p-p^*|}{|p|}\)</span></li>
+</ul>
+<p>其中 <span class="arithmatex">\(p^*\)</span>  是近似， <span class="arithmatex">\(p\)</span> 是准确值。</p>
+<h2 id="_3">秦九韶算法<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>秦九韶算法可以减少误差。
+<script type="math/tex; mode=display">
+f(x)=a_nx^n+a_{n-1}x^{n-1}+\cdots+a_0\\
+=(a_0+x(a_1+x(a_2+x(\cdots+xa_n))))
+</script>
+就是提取 <span class="arithmatex">\(x\)</span> 。</p>
+<h2 id="_4">算法稳定性和收敛性<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h3 id="stability">Stability 稳定性<a class="headerlink" href="#stability" title="Permanent link">&para;</a></h3>
+<ul>
+<li>算法的<strong>稳定性 (Stability)</strong> 是指算法的输出对于输入（初始数据）的微小变化而言，输出结果的变化也是微小的</li>
+<li>如果满足该标准，则称为<strong>稳定 (stable)</strong> 的，反之则是<strong>不稳定 (unstable)</strong> 的</li>
+<li>如果仅对满足特定条件的初始数据稳定，则称为<strong>条件稳定 (conditionally stable)</strong> 的</li>
+</ul>
+<h3 id="linearexponential_growth">Linear/Exponential Growth  线性增长和指数增长<a class="headerlink" href="#linearexponential_growth" title="Permanent link">&para;</a></h3>
+<p>假设在算法实施的某个阶段引入了大小为 <span class="arithmatex">\(E_0\)</span> 的误差，在其后的第 <span class="arithmatex">\(n\)</span> 次运算中的误差记为 ，考<span class="arithmatex">\(E_n\)</span>虑其增长速度。</p>
+<ul>
+<li>如果 <span class="arithmatex">\(E_n=CE_0,C\)</span> 是与 <span class="arithmatex">\(n\)</span> 无关的常数，则称为<strong>线性增长 (linear growth)</strong></li>
+<li>如果 <span class="arithmatex">\(E_n=C^nE_0,C&gt;1\)</span> 是与  <span class="arithmatex">\(C\)</span> 无关的常数，则称为<strong>指数增长 (exponential growth)</strong></li>
+</ul>
+<p>一般来说，误差线性增长是<strong>可接受的 (acceptable)</strong>，而指数增长是<strong>不可接受的 (unacceptable)</strong>。因而称前者是稳定的，后者是不稳定的。</p>
+<h1 id="chapter_5">Chapter 5 常微分方程的初值问题<a class="headerlink" href="#chapter_5" title="Permanent link">&para;</a></h1>
+<p>第一部分的问题是</p>
+<p>已知
+<script type="math/tex; mode=display">
+\frac{dy}{dt}=f(t,y),a\le t\le b
+</script>
+初值条件为 <span class="arithmatex">\(y(a)=\alpha\)</span></p>
+<p>求 <span class="arithmatex">\(y\)</span> 关于 <span class="arithmatex">\(t\)</span> 的表达式 <span class="arithmatex">\(y(t)\)</span> 。</p>
+<h2 id="_5">初值问题的基本理论<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<p><strong>初值问题：</strong> 求解满足给定初值条件的微分方程。</p>
+<p>一般来说，根据实际问题建模的微分方程难以准确求解，有两种思路去逼近：</p>
+<ul>
+<li>将原微分方程化简为可以准确求解的方程，然后使用化简后的方程的解去逼近原方程的解。</li>
+<li>第二种是本章要讨论的办法，使用逼近初值问题的解的方法。</li>
+</ul>
+<p>首先我们需要常微分理论的一些定义和结果，我们需要知道问题语句中小的变动是否对应解的小的变动，因为使用数值方法时引入了舍入误差。</p>
+<p><strong>Lipschitz 条件</strong></p>
+<p>如果 <span class="arithmatex">\(f(t,y)\)</span> 关于 <span class="arithmatex">\(y\)</span> 满足 <span class="arithmatex">\(Lipschitz\)</span> 条件，则存在一个常数 <span class="arithmatex">\(L&gt;0\)</span> 使得
+<script type="math/tex; mode=display">
+|f(t,y_1)-f(t,y_2)|\le L|y_1-y_2| ,\forall(t,y_1),(t,y_2)\in D
+</script>
+常数 <span class="arithmatex">\(L\)</span> 称为 <span class="arithmatex">\(f\)</span> 的 <strong>Lipschitz 常数</strong> 。</p>
+<p><strong>集合 <span class="arithmatex">\(D\)</span> 是凸的</strong></p>
+<p>就是对于任意两点属于 <span class="arithmatex">\(D\)</span> ，那么两点连线间的所有点也都属于 <span class="arithmatex">\(D\)</span> 。</p>
+<p><strong>适定的问题</strong></p>
+<p>对于 <span class="arithmatex">\(y'(t)=f(t,y),a\le t\le b,y(a)=a\)</span> 称为一个适定的问题，则</p>
+<ul>
+<li>唯一解 <span class="arithmatex">\(y(t)\)</span></li>
+<li>对 <span class="arithmatex">\(\forall \epsilon&gt;0\)</span> ，存在正常数 <span class="arithmatex">\(k(\epsilon)\)</span> 使得只要当 <span class="arithmatex">\(|\epsilon_0|&lt;\epsilon\)</span> ，<span class="arithmatex">\(\delta(t)\)</span> 连续且在 <span class="arithmatex">\([a,b]\)</span> 上 <span class="arithmatex">\(|\delta (t)|&lt;\epsilon\)</span> 时有 <strong>摄动问题</strong></li>
+</ul>
+<div class="arithmatex">\[
+\frac{dz}{dt}=f(t,z)+\delta(t),a\le t\le b,z(a)=a+\epsilon_0
+\]</div>
+<p>​       存在唯一解 <span class="arithmatex">\(z(t)\)</span> ，且 <span class="arithmatex">\(z(t)-y(t)&lt;k(\epsilon)\epsilon\)</span> 对一切 <span class="arithmatex">\(a\le t\le b\)</span> 成立。</p>
+<p><strong>定理</strong></p>
+<ul>
+<li>
+<p>若在凸集 <span class="arithmatex">\(D\)</span> 上 <span class="arithmatex">\(|\frac{\part f}{\part y}(t,y)|\le L\)</span> 那么 <span class="arithmatex">\(L\)</span> 为 <span class="arithmatex">\(f\)</span> 的 Lipschitz 常数。</p>
+</li>
+<li>
+<p>假设 <span class="arithmatex">\(D=\{(t,y)|a\le t\le b,-\infty&lt;y&lt;\infty\}\)</span> 且 <span class="arithmatex">\(f(t,y)\)</span> 在 <span class="arithmatex">\(D\)</span> 上连续，如果 <span class="arithmatex">\(f\)</span> 关于 <span class="arithmatex">\(y\)</span> 满足 Lipschitz 条件，则初值问题 <span class="arithmatex">\(y'(t)=f(t,y),a\le t\le b,y(a)=a\)</span> 对 <span class="arithmatex">\(a\le t\le b\)</span> 有唯一解 <span class="arithmatex">\(y(t)\)</span> 。</p>
+</li>
+<li>
+<p>如果 <span class="arithmatex">\(f\)</span> 连续且在 <span class="arithmatex">\(D\)</span> 上关于 <span class="arithmatex">\(y\)</span> 满足 Lipschitz 条件，则初值问题是适定的。</p>
+</li>
+</ul>
+<h2 id="-euler">初值问题-Euler法<a class="headerlink" href="#-euler" title="Permanent link">&para;</a></h2>
+<p>虽然实际上很少用，但是可以用于理解一些更高级的方法。</p>
+<p>目的：初值问题 <span class="arithmatex">\(y'(t)=f(t,y),a\le t\le b,y(a)=a\)</span> 解 <span class="arithmatex">\(y(t)\)</span> 的近似解。</p>
+<p>实际上不能得到 <span class="arithmatex">\(y(t)\)</span> 的一个连续的近似解，而是在 <span class="arithmatex">\([a,b]\)</span> 内的若干等距点（网格点）产生近似值，中间部分的函数值通过插值求出。</p>
+<p>假设网格点是均匀分布的 <span class="arithmatex">\(t_i=a+ih,h=0,1,2,\cdots,N\)</span> ，<span class="arithmatex">\(h=(b-a)/N\)</span> 为步长。</p>
+<p>那么利用泰勒公式
+<script type="math/tex; mode=display">
+y(t_{i+1})=y(t_i)+(t_{i+1}-t_i)y'(t_i)+\frac{(t_{i+1}-t_i)^2}{2}y''(\xi_i)\\
+=y(t_i)+hy'(t_i)+\frac{h^2}{2}y''(\xi_i)
+</script>
+又因为 <span class="arithmatex">\(y'(t)=f(t,y)\)</span></p>
+<p>所以有
+<script type="math/tex; mode=display">
+y(t_{i+1})=y(t_i)+hf(t_i,y(t_i))+\frac{h^2}{2}y''(\xi_i)
+</script>
+Euler 法通过忽略余项构造 <span class="arithmatex">\(w_i=y(t_i)\)</span> 有 <span class="arithmatex">\(w_0=\alpha\)</span></p>
+<p>那么有 <span class="arithmatex">\(w_{i+1}=w_i+hf(t_i,w_i),i=0\sim N-1\)</span> 。</p>
+<p>上式称为 <span class="arithmatex">\(Euler\)</span> 法相伴的差分方程，然后 Euler 法就完成了。</p>
+<p>接下来是对于误差的推导，需要用到两个引理。</p>
+<p><strong>引理1：</strong> 对所有 <span class="arithmatex">\(x\ge -1\)</span> 和任何正整数 <span class="arithmatex">\(m\)</span> ，有 <span class="arithmatex">\(0\le (1+x)^m\le e^{mx}\)</span> 。</p>
+<p><strong>引理2：</strong> 如果 <span class="arithmatex">\(s,t\)</span> 为正实数 <span class="arithmatex">\(\{a_i\}\)</span> 满足 <span class="arithmatex">\(a_0\ge -t/s\)</span> 和 <span class="arithmatex">\(a_{i+1}\le (1+s)a_i+t\)</span> ，则 <span class="arithmatex">\(a_{i+1}\le e^{(i+1)s}(a_0+\frac ts)-\frac ts\)</span> （证明不难，拿出高中数列那套，略）。</p>
+<p><strong>定理1：</strong> 假设 <span class="arithmatex">\(f\)</span> 连续，且在 <span class="arithmatex">\(D=\{(t,y)|a\le t\le b,-\infty&lt;y&lt;\infty\}\)</span> 上满足常数为 <span class="arithmatex">\(L\)</span> 的 Lipschitz 条件，又假设常数 <span class="arithmatex">\(M\)</span> 使得对一切 <span class="arithmatex">\(t\in [a,b]\)</span> 成立。设 <span class="arithmatex">\(y(t)\)</span> 是该初值问题的解 <span class="arithmatex">\(t_0\sim t_n\)</span> 是选择的 <span class="arithmatex">\(n+1\)</span> 个网格点， <span class="arithmatex">\(w_i\)</span> 为得到的近似解，那么有 <span class="arithmatex">\(|y(t_i)-w_i|\le \frac{hM}{2L}(e^{L(t_i-a)}-1)\)</span></p>
+<p>证明就是你会发现 <span class="arithmatex">\(|y_{i+1}-w_{i+1}|\le |y_i-w_i|+h|f(t_i,y_i)-f(t_i,w_i)|+\frac{h^2}{2}|y''(\xi_i)|\)</span> 。然后接下来的部分不难，略。</p>
+<p>实际上，为了将误差改造为不与 <span class="arithmatex">\(h\)</span> 呈线性关系的式子，可以将式子改造为 <span class="arithmatex">\(w_{i+1}=w_i+hf(t_i,u_i)+\delta_{i+1},w_0=a+\delta_0\)</span> 且 <span class="arithmatex">\(\delta_i&lt;\delta\)</span> 是与 <span class="arithmatex">\(u_i\)</span> 相关的舍入误差。则可以得到 <span class="arithmatex">\(|y(t_i)-w_i|\le \frac{1}{L}(\frac{hM}{2}+\frac\delta h)(e^{L(t_i-a)}-1)+|\delta_0| e^{L(t_i-a)}\)</span> 。</p>
+<p>令 <span class="arithmatex">\(E(h)=(hM)/2+(\delta/h)\)</span> ，那么可以得到当 <span class="arithmatex">\(h=\sqrt{2\delta/M}\)</span> 时， <span class="arithmatex">\(E(h)\)</span> 取最小。</p>
+<h2 id="taylor">高阶 Taylor 方法<a class="headerlink" href="#taylor" title="Permanent link">&para;</a></h2>
+<p>差方法
+<script type="math/tex; mode=display">
+w_0=a\\
+w_{i+1}=w_i+h\phi(t_i,w_i)
+</script>
+定义<strong>局部截断误差</strong>
+<script type="math/tex; mode=display">
+\tau_{i+1}(h)=\frac{y_{i+1}-(y_i+h\phi(t_i,y_i))}{h}
+</script>
+其中 <span class="arithmatex">\(y_i\)</span> 为 <span class="arithmatex">\(y(t)\)</span> 在 <span class="arithmatex">\(t_i\)</span> 的准确解，这个误差是局部误差，因为假定了前一步是正确的。</p>
+<p>因为泰勒公式，所以我们知道 <span class="arithmatex">\(y_{i+1}=y_i+hy'(t_i)+\frac{h^2}2y''(\xi_i)\)</span> ，所以可以知道 Euler 法的局部误差为 <span class="arithmatex">\(\frac h{2}y''(\xi_i),t_i\le\xi_i\le t_{i+1}\)</span> 。所以 Euler 的局部截断误差是 <span class="arithmatex">\(O(h)\)</span> 的。</p>
+<p>Euler 法是用 Taylor 定理在 <span class="arithmatex">\(n=1\)</span> 逼近微分方程推导出来的，所以为了改进差分方法的收敛性所进行的第一个尝试是将推导方法扩展为更大的 <span class="arithmatex">\(n\)</span> 值。</p>
+<p>假定初值问题 <span class="arithmatex">\(y'(t)=f(t,y),a\le t\le b,y(a)=a\)</span> 的解 <span class="arithmatex">\(y(t)\)</span> 有 <span class="arithmatex">\((n+1)\)</span> 阶连续导数，如果将解 <span class="arithmatex">\(y(t)\)</span> 关于 <span class="arithmatex">\(t_i\)</span> 展开为 <span class="arithmatex">\(n\)</span> 阶 Taylor 多项式并求其在 <span class="arithmatex">\(t_{i+1}\)</span>  的值，则有
+<script type="math/tex; mode=display">
+y(t_{i+1})=y(t_i)+hy'(t_i)+\frac{h^2}{2}y''(t_i)+\cdots+\frac{h^n}{n!}y^{(n)}(t_i)+\frac{h^{n+1}}{(n+1)!}y^{(n+1)}(\xi_i)
+</script>
+对 <span class="arithmatex">\((t_i,t_{i+1})\)</span> 中的某个 <span class="arithmatex">\(\xi_i\)</span> 成立。</p>
+<p>因为 <span class="arithmatex">\(y'(t)=f(t,y(t)),y^{(k)}(t)=f^{(k-1)}(t,y(t))\)</span> ，所以有
+<script type="math/tex; mode=display">
+y(t_{i+1})=y(t_i)+hf(t_i,y(t_i))+\frac{h^2}{2}f'(t_i,y(t_i))+\cdots+\frac{h^n}{n!}f^{(n-1)}(t_i,y(t_i))+\frac{h^{n+1}}{(n+1)!}f^{(n)}(\xi_i,y(\xi_i))
+</script>
+对于上式的差分方程法，舍去含 <span class="arithmatex">\(\xi_i\)</span> 的余项，称为 **<span class="arithmatex">\(n\)</span> 阶泰勒方法 ** 。
+<script type="math/tex; mode=display">
+w_0=a\\
+w_{i+1}=w_i+hT^{(n)}(t_i,w_i),i=0,\sim N-1\\
+T^{(n)(t_i,w_i)}=f(t_i,y(t_i))+\frac{h}{2}f'(t_i,y(t_i))+\cdots+\frac{h^{(n-1)}}{n!}f^{(n-1)}(t_i,y(t_i))
+</script>
+Euler 方法是阶为 <span class="arithmatex">\(1\)</span> 的 Taylor 方法。</p>
+<p><strong>定理：</strong> 如果步长为 <span class="arithmatex">\(h\)</span> 的 <span class="arithmatex">\(n\)</span> 阶 Taylor 方法用于近似求解
+<script type="math/tex; mode=display">
+y'(t)=f(t,y(t)),a\le t\le b,y(a)=\alpha
+</script>
+且 <span class="arithmatex">\(y\in C^{n+1}[a,b]\)</span> （在 <span class="arithmatex">\([a,b]\)</span> 上有 <span class="arithmatex">\(n+1\)</span> 阶连续导），则局部误差是 <span class="arithmatex">\(O(h^n)\)</span> 。</p>
+<p>其中局部截断误差为 
+<script type="math/tex; mode=display">
+\tau_{i+1}(h)=\frac{y_{i+1}-y_i}{h}-T^{(n)}(t_i,y_i)=\frac{h^n}{(n+1)!}f^{(n)}(\xi_i,y(\xi_i))
+</script>
+</p>
+<h2 id="runge-kutta">Runge-Kutta 方法<a class="headerlink" href="#runge-kutta" title="Permanent link">&para;</a></h2>
+<p>具有 Taylor 的高阶局部截断误差，同时消除了需要计算 <span class="arithmatex">\(f(t,y)\)</span> 的导数和求值。</p>
+<p>先引入二元 Taylor 定理：</p>
+<p><strong>二元泰勒定理：</strong> 假设 <span class="arithmatex">\(f(t,y)\)</span> 及其阶数小于等于 <span class="arithmatex">\(n+1\)</span> 的所有偏导数在 <span class="arithmatex">\(D=\{(t,y)|a\le t\le b,c\le y\le d\}\)</span> 上连续。令 <span class="arithmatex">\((t_0,y_0)\in D\)</span> ，对 <span class="arithmatex">\(\forall (t,y)\in D\)</span>  ，存在 <span class="arithmatex">\(\xi\)</span> 在 <span class="arithmatex">\(t\)</span> 和 <span class="arithmatex">\(t_0\)</span> 间， <span class="arithmatex">\(\mu\)</span> 在 <span class="arithmatex">\(y\)</span> 和 <span class="arithmatex">\(y_0\)</span> 间满足
+<script type="math/tex; mode=display">
+\begin{align}
+f(t,y)&=P_n(t,y)+R_n(t,y)\\
+P_n(t,y)&=f(t_0,y_0)+\bigg[(t-t_0)\frac {\part f}{\part t}(t_0,y_0)+(y-y_0)\frac{\part f}{\part y}(t_0,y_0)\bigg]\\
+&+\bigg[\frac{(t-t_0)^2}{2}\frac {\part^2 f}{\part t^2}(t_0,y_0)+(t-t_0)(y-y_0)\frac{\part^2 f}{\part y\part t}(t_0,y_0)+\frac{(y-y_0)^2}{2}\frac {\part^2 f}{\part y^2}(t_0,y_0)\bigg]\\
+&+\cdots
++\bigg[\frac 1{(n+1)!}\sum_{j=0}^n\binom{n}{j}(t-t_0)^{n-j}(y-y_0)^j\frac{\part^n f}{\part t^{n-j}\part y^{j}}(t_0,y_0)\bigg]\\
+R_n(t,y)&=\frac{1}{(n+1)!}\sum_{j=0}^{n+1}\binom{n+1}{j}(t-t_0)^{n+1-j}(y-y_0)^{j}\frac{\part^{n+1} f}{\part t^{n+1-j}\part y^j}(\xi,\mu)
+\end{align}
+</script>
+其中 <span class="arithmatex">\(P_n\)</span> 为两个变量的 <span class="arithmatex">\(n\)</span> 阶泰勒公式， <span class="arithmatex">\(R_n\)</span> 为 <span class="arithmatex">\(P_n\)</span> 相关的余项。</p>
+<p>现在我们的 Runge-Kutta 方法是用 <strong><span class="arithmatex">\(f\)</span> 在某一处的函数值来代替求导这一步骤，同时保证误差的阶不变</strong>。</p>
+<p>即用 <span class="arithmatex">\(a_1f(t+\alpha_1,y+\beta_1)\)</span> 逼近 <span class="arithmatex">\(T^{(2)}(t,y)=f(t,y)+\frac{h}{2}f'(t,y)\)</span> 且二阶 Taylor 方法的局部截断误差不超过 <span class="arithmatex">\(O(h^2)\)</span> 。</p>
+<p>因为
+<script type="math/tex; mode=display">
+f'(t,y)=\frac{\part{f}}{\part t}(t,y)+\frac{\part f}{\part y}(t,y)\cdot f(t,y)\\
+\rightarrow T^{(2)}(t,y)=f(t,y)+\frac{h}{2}\frac{\part f}{\part t}(t,y)+\frac h2\frac{\part f}{\part y}(t,y)\cdot f(t,y)
+</script>
+将 <span class="arithmatex">\(f(t+\alpha_1,y+\beta_1)\)</span> 关于 <span class="arithmatex">\((t,y)\)</span> 展开为一次 Taylor 多项式得
+<script type="math/tex; mode=display">
+a_1f(t+\alpha_1,y+\beta_1)=a_1f(t,y)+a_1\alpha_1\frac{\part f}{\part t}(t,y)+a_1\beta_1\frac{\part f}{\part y}(t,y)+a_1\cdot R_1(t+\alpha_1,y+\beta_1)
+</script>
+其中余项见二元泰勒定理。可以求得
+<script type="math/tex; mode=display">
+R_1(t+\alpha_1,y+\beta_1)=\frac{\alpha_1^2}{2}\frac{\part^2 f}{\part t^2}(\xi,\mu)+\alpha_1\beta_1\frac{\part^2 f}{\part t\part y}(\xi,\mu)+\frac{\beta_1^2}{2}\frac{\part ^2 f}{\part y^2}(\xi,\mu)
+</script>
+</p>
+<p>可以得到
+<script type="math/tex; mode=display">
+\frac{a_1}{1}=\frac{a_1\alpha_1}{\frac{h}{2}}=\frac{a_1\beta_1}{\frac h2 f(t,y)}=1
+</script>
+故参数可以确定为
+<script type="math/tex; mode=display">
+a_1=1,\alpha_1=\frac{h}2,\beta_1=\frac h2f(t,y)
+</script>
+所以
+<script type="math/tex; mode=display">
+T^{(2)}(t,y)=f(t+\frac h2,y+\frac h2f(t,y))-R_1(t+\frac h2,y+\frac h2 f(t,y))
+</script>
+而 
+<script type="math/tex; mode=display">
+R_1(t+\frac h2,y+\frac h2f(t,y))=\frac{h^2}{8}\frac{\part^2 f}{\part t^2}(\xi,\mu)+\frac{h^2}{4}f(t,y)\frac{\part^2 f}{\part t\part y}(\xi,\mu)+\frac{h^2}{8}(f(t,y))^2\frac{\part ^2 f}{\part y^2}(\xi,\mu)
+</script>
+而这个局部截断误差的阶为 <span class="arithmatex">\(O(h^2)\)</span> ，可能会增加误差，但是不增加误差的阶。</p>
+<p>由在二阶 Taylor 方法中 <span class="arithmatex">\(f(t+\frac h2,y+\frac h2 f(t,y))\)</span> 代替 <span class="arithmatex">\(T^{(2)}(t,y)\)</span> 所得到的差分方程方法是一个特殊的 Runge-Kutta 方法称作 <strong>中点法</strong> 。</p>
+<p><strong>中点法</strong>
+<script type="math/tex; mode=display">
+w_0=\alpha\\
+w_{i+1}=w_i+hf(t_i+\frac h2,w_i+\frac h2f(t_i,w_i)),i=0,1,\cdots N-1
+</script>
+</p>
+<hr />
+<p>同理，我们想要用 <span class="arithmatex">\(f\)</span> 来逼近含 <span class="arithmatex">\(f''\)</span> 的 <span class="arithmatex">\(T^{(3)}\)</span> ，那么最适当的应该是用 <span class="arithmatex">\(4\)</span> 个参数
+<script type="math/tex; mode=display">
+a_1f(t,y)+a_2f(t+\alpha_2,y+\delta_2f(t,y))
+</script>
+但是这并不能灵活匹配根据 <span class="arithmatex">\(\frac{h^2}6f''(t,y)\)</span> 展开所得项 <span class="arithmatex">\(\frac{h^2}6[\frac{\part f}{\part y}(t,y)]^2f(t,y)\)</span> 。</p>
+<p>所以阶数还只能得到  <span class="arithmatex">\(O(h^2)\)</span> ，但是这完成了一点点改进。</p>
+<p><strong>改进 Euler 法</strong></p>
+<p>上述例子取 <span class="arithmatex">\(a_1=a_2=\frac 12,\alpha_2=\delta_2=h\)</span> ，所以差分方程就为
+<script type="math/tex; mode=display">
+w_0=a\\
+w_{i+1}=w_{i}+\frac h2[f(t_i,w_i)+f(t_{i+1},w_i+hf(t_{i},w_i))],i=0,1,\cdots,N-1
+</script>
+我们不知道的就只有 <span class="arithmatex">\(w_{i+1}\)</span> ，而 <span class="arithmatex">\(t_{i+1},t_i,h\)</span> 都知道，所以式子如上。</p>
+<p>另一个重要的 <span class="arithmatex">\(O(h^2)\)</span> 的方法是 Heun 方法。这对应 <span class="arithmatex">\(a_1=\frac 14,a_2=\frac 34,\alpha_2=\delta_2=\frac23 h\)</span> 且有下面的差分方程形式</p>
+<p><strong>Heun 方法</strong>
+<script type="math/tex; mode=display">
+w_0=a\\
+w_{i+1}=w_i+\frac h4[f(t_i,w_i)+3f(t_i+\frac 23 h,w_i+\frac 23hf(t_i,w_i))],i=0,1,\cdots N-1
+</script>
+上面两个方法都归类为二阶 Runge-Kutta 方法，二阶是指它们的局部截断误差的阶。</p>
+<p><strong>高阶 Runge-Kutta 法</strong>
+<script type="math/tex; mode=display">
+\begin{cases}
+w_0=a\\
+K_1=f(t_i,w_i)\\
+K_2=f(t_i+\alpha_2 h,w_i+\beta_{21}hK_1)\\
+K_3=f(t_i+\alpha_3 h,w_i+\beta_{31}hK_1+\beta_{32}hK_2)\\
+\cdots\\
+K_m=f(t_i+\alpha_m h,w_i+\beta_{m1}hK_1+\beta_{m2}hK_2+\cdots +\beta_{m,m-1}hK_{m-1})\\
+w_{i+1}=w_i+h(\lambda_1K_1+\cdots+\lambda_mK_m)
+\end{cases}
+</script>
+其中常用的有 <span class="arithmatex">\(4\)</span> 阶 Runge-Kutta 法
+<script type="math/tex; mode=display">
+\begin{cases}
+w_0=\alpha\\
+K_1=f(t_i,w_i)\\
+K_2=f(t_i+\frac h2,w_i+\frac h2 K_1)\\
+K_3=f(t_i+\frac h2,w_i+\frac h2K_2)\\
+K_4=f(t_i+h,w_i+hK_3)\\
+w_{i+1}=w_i+h(\frac 16 K_1+\frac 13K_2+\frac13 K_3+\frac 16K_4)
+\end{cases}
+</script>
+因为 Runge-Kutta 方法是基于 Taylor 展开的，所以 y 必须足够平滑，才能获得更高阶方法的更高精度。通常情况下，人们更喜欢使用较小步长的低阶方法，而不是使用较大步长的高阶方法。</p>
+<p>如果 <span class="arithmatex">\(y\)</span> 不够光滑，那么高阶的 Runge-Kutta 方法也不会有很好的效果，所以一般会用低阶的 Runge-Kutta 方法，但是步长会更小。</p>
+<p>其核心就是将 <span class="arithmatex">\(f(t_i+\frac{h}{2},w_i+\frac h2 K_2)\)</span> 这些二元变量的函数值 Taylor展开，然后进行系数的计算后前几阶的含 <span class="arithmatex">\(h^k\)</span> 的项让其系数相等就可以了。</p>
+<h2 id="runge-kutta-fehlberg">误差控制和 Runge-Kutta-Fehlberg 方法<a class="headerlink" href="#runge-kutta-fehlberg" title="Permanent link">&para;</a></h2>
+<h2 id="_6">多步法<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<p>前面的方法被命名为单步法的原因是 <span class="arithmatex">\(t_{i+1}\)</span> 的近似只涉及了前一个网格点 <span class="arithmatex">\(t_i\)</span> 的信息。那么用多步法，我们有这样的近似技巧
+<script type="math/tex; mode=display">
+\begin{align}
+w_{i+1}&=a_{m-1}w_i+a_{m-2}w_{i-1}+\cdots+a_0w_{i+1-m}\\
+&+h[b_mf(t_{i+1},w_{i+1})+b_{m-1}f(t_i,w_i)+\cdots\\
+&+b_0f(t_{i+1-m},w_{i+1-m})]
+\end{align}
+</script>
+然后用这个方法的话，前 <span class="arithmatex">\(m\)</span> 个初值是要给定的（因为用来推算它的不足 <span class="arithmatex">\(m\)</span> 个），即
+<script type="math/tex; mode=display">
+w_0=\alpha_0,w_1=\alpha_1,\cdots,w_{m-1}=\alpha_{m-1}
+</script>
+<strong>显式和隐式</strong> ：看 <span class="arithmatex">\(b_m\)</span> 是否为 <span class="arithmatex">\(0\)</span> 。</p>
+<p>即计算 <span class="arithmatex">\(w_{i+1}\)</span> 的式子右边里面是否含有 <span class="arithmatex">\(w_{i+1}\)</span> 的项（就是是否涉及到用自己来移项后再除）。</p>
+<p><span class="arithmatex">\(b_m=0\)</span> 时，为显式或开的 ； <span class="arithmatex">\(b_m\ne 0\)</span> ，为隐式或闭的。</p>
+<p><strong>4阶 Adams-Bashforth</strong> 方法（一个显式4步方法）
+<script type="math/tex; mode=display">
+w_{i+1}=w_i+\frac{h}{24}[55f(t_i,w_i)-59f(t_{i-1},w_{i-1})+37f(t_{i-2},w_{i-2})-9f(t_{i-3},w_{i-3})]
+</script>
+<strong>4阶 Adams-Moulton</strong> 方法（一个隐式三步方法）
+<script type="math/tex; mode=display">
+w_{i+1}=w_i+\frac{h}{24}[9f(t_{i+1},w_{i+1})+19f(t_i,w_i)-5f(t_{i-1},w_{i-1})+f(t_{i-2},w_{i-2})]
+</script>
+<strong>推导多步法</strong>的过程为
+<script type="math/tex; mode=display">
+y(t_{i+1})-y(t_i)=\int_{t_i}^{t_{i+1}}f(t,y(t))dt
+</script>
+因为不知道 <span class="arithmatex">\(y(t)\)</span> ，所以对 <span class="arithmatex">\(f(t,y(t))\)</span> 使用插值多项式 <span class="arithmatex">\(P(t)\)</span> 的积分来代替。这个多项式是由 <span class="arithmatex">\((t_{0},w_0)\cdots(t_{i},w_i)\)</span> 确定的。</p>
+<p>这一部分先略过。</p>
+<p><strong>隐式欧拉法</strong>
+<script type="math/tex; mode=display">
+w_0=\alpha,w_{i+1}=w_i+hf(t_{i+1},w_{i+1})
+</script>
+<strong>梯形法</strong> (Trapezoidal Method)
+<script type="math/tex; mode=display">
+w_{i+1}=w_i+\frac h2(f(t_i,w_i)+f(t_{i+1},w_{i+1}))
+</script>
+<strong>双步法</strong> (Double-step Method)
+<script type="math/tex; mode=display">
+w_0=\alpha,w_{i+1}=w_{i-1}+2hf(t_i,w_i)
+</script>
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 - 2099 wh2005
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tracking", "navigation.tabs", "navigation.indexes", "toc.follow", "navigation.top", "header.autohide", "search.share", "search.suggest", "search.highlight", "header.autohide", "content.code.copy", "content.tabs.link"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.081f42fc.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      
+    
+  </body>
+</html>
